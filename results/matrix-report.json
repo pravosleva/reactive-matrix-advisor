@@ -1,0 +1,1183 @@
+{
+  "generatedAt": "2026-11-24T16:37:12.298Z",
+  "sources": {
+    "colliderTimestamp": "2026-11-24T07:06:08.710Z",
+    "memoryTimestamp": "2026-11-24T10:00:18.914Z"
+  },
+  "engines": [
+    {
+      "engine": "@pravosleva/reactive-engine",
+      "version": "v3.0.4",
+      "tag": "Full-featured Engine + DI",
+      "opsPerSec": 8271,
+      "bestTimeMs": 604.52,
+      "hardCalls": 3,
+      "nodeBytes": 590.7,
+      "tickAllocBytes": 751.5,
+      "leakBytes": 28.32,
+      "isolation": 100,
+      "ergonomics": 95,
+      "norm": {
+        "speed": 100,
+        "smartGraph": 100,
+        "nodeMem": 42.49195869307601,
+        "tickMem": 15.888223552894212,
+        "leak": 36.5819209039548,
+        "isolation": 100,
+        "ergonomics": 95
+      }
+    },
+    {
+      "engine": "@vue/reactivity",
+      "version": "v3.5.46",
+      "tag": "Balanced Core + EffectScope",
+      "opsPerSec": 7964,
+      "bestTimeMs": 627.83,
+      "hardCalls": 3,
+      "nodeBytes": 330.2,
+      "tickAllocBytes": 247.4,
+      "leakBytes": 23.97,
+      "isolation": 85,
+      "ergonomics": 85,
+      "norm": {
+        "speed": 96.28823600531979,
+        "smartGraph": 100,
+        "nodeMem": 76.0145366444579,
+        "tickMem": 48.26192400970089,
+        "leak": 43.22069253233208,
+        "isolation": 85,
+        "ergonomics": 85
+      }
+    },
+    {
+      "engine": "@angular/core (Signals)",
+      "version": "v22.3.0",
+      "tag": "Framework Signals + DI",
+      "opsPerSec": 7941,
+      "bestTimeMs": 629.67,
+      "hardCalls": 3,
+      "nodeBytes": 517.4,
+      "tickAllocBytes": 119.4,
+      "leakBytes": 18.82,
+      "isolation": 95,
+      "ergonomics": 90,
+      "norm": {
+        "speed": 96.01015596663039,
+        "smartGraph": 100,
+        "nodeMem": 48.51178971781987,
+        "tickMem": 100,
+        "leak": 55.04782146652497,
+        "isolation": 95,
+        "ergonomics": 90
+      }
+    },
+    {
+      "engine": "MobX",
+      "version": "v7.1.7",
+      "tag": "OOP Observable + Comparers",
+      "opsPerSec": 7791,
+      "bestTimeMs": 641.79,
+      "hardCalls": 3,
+      "nodeBytes": 522.6,
+      "tickAllocBytes": 1544.5,
+      "leakBytes": 89.01,
+      "isolation": 90,
+      "ergonomics": 92,
+      "norm": {
+        "speed": 94.19659049691694,
+        "smartGraph": 100,
+        "nodeMem": 48.02908534251817,
+        "tickMem": 7.730657170605375,
+        "leak": 11.63914166947534,
+        "isolation": 90,
+        "ergonomics": 92
+      }
+    },
+    {
+      "engine": "$mol ($mol_wire_let)",
+      "version": "v1.0.1852",
+      "tag": "Quantum Graph + Deep Compare",
+      "opsPerSec": 7606,
+      "bestTimeMs": 657.39,
+      "hardCalls": 3,
+      "nodeBytes": 532.9,
+      "tickAllocBytes": 1343.5,
+      "leakBytes": 1176.89,
+      "isolation": 80,
+      "ergonomics": 85,
+      "norm": {
+        "speed": 91.95985975093701,
+        "smartGraph": 100,
+        "nodeMem": 47.10076937511729,
+        "tickMem": 8.887234834387794,
+        "leak": 0.8802861779775508,
+        "isolation": 80,
+        "ergonomics": 85
+      }
+    },
+    {
+      "engine": "SolidJS 2 (@solidjs/signals)",
+      "version": "v2.0.3",
+      "tag": "Root-scoped Signals",
+      "opsPerSec": 5675,
+      "bestTimeMs": 881.02,
+      "hardCalls": 4,
+      "nodeBytes": 449.2,
+      "tickAllocBytes": 1343.6,
+      "leakBytes": 447.96,
+      "isolation": 85,
+      "ergonomics": 80,
+      "norm": {
+        "speed": 68.61322693749244,
+        "smartGraph": 70,
+        "nodeMem": 55.87711487088157,
+        "tickMem": 8.886573384935993,
+        "leak": 2.3127064916510403,
+        "isolation": 85,
+        "ergonomics": 80
+      }
+    },
+    {
+      "engine": "alien-signals",
+      "version": "v3.2.1",
+      "tag": "Low-level Primitive",
+      "opsPerSec": 5466,
+      "bestTimeMs": 914.75,
+      "hardCalls": 5,
+      "nodeBytes": 251,
+      "tickAllocBytes": 119.4,
+      "leakBytes": 29.4,
+      "isolation": 45,
+      "ergonomics": 45,
+      "norm": {
+        "speed": 66.08632571635836,
+        "smartGraph": 40,
+        "nodeMem": 100,
+        "tickMem": 100,
+        "leak": 35.23809523809524,
+        "isolation": 45,
+        "ergonomics": 45
+      }
+    },
+    {
+      "engine": "@preact/signals-core",
+      "version": "v1.14.5",
+      "tag": "Minimalist Signal Primitive",
+      "opsPerSec": 5389,
+      "bestTimeMs": 927.85,
+      "hardCalls": 5,
+      "nodeBytes": 257.7,
+      "tickAllocBytes": 401.2,
+      "leakBytes": 10.36,
+      "isolation": 55,
+      "ergonomics": 55,
+      "norm": {
+        "speed": 65.15536210857212,
+        "smartGraph": 40,
+        "nodeMem": 97.40007760962361,
+        "tickMem": 29.760717846460622,
+        "leak": 100,
+        "isolation": 55,
+        "ergonomics": 55
+      }
+    },
+    {
+      "engine": "Reatom (@reatom/core)",
+      "version": "v1001.3.0",
+      "tag": "Transactional Atom Graph",
+      "opsPerSec": 4765,
+      "bestTimeMs": 1049.33,
+      "hardCalls": 5,
+      "nodeBytes": 1620.1,
+      "tickAllocBytes": 2002.7,
+      "leakBytes": 185.88,
+      "isolation": 95,
+      "ergonomics": 90,
+      "norm": {
+        "speed": 57.61092975456415,
+        "smartGraph": 40,
+        "nodeMem": 15.4928708104438,
+        "tickMem": 5.961951365656364,
+        "leak": 5.573488272003443,
+        "isolation": 95,
+        "ergonomics": 90
+      }
+    },
+    {
+      "engine": "Effector",
+      "version": "v23.4.4",
+      "tag": "Static Domain Stores (Fork API)",
+      "opsPerSec": 3587,
+      "bestTimeMs": 1394.1,
+      "hardCalls": 6,
+      "nodeBytes": 5835.9,
+      "tickAllocBytes": 3379,
+      "leakBytes": 128.6,
+      "isolation": 95,
+      "ergonomics": 92,
+      "norm": {
+        "speed": 43.368395599081126,
+        "smartGraph": 15,
+        "nodeMem": 4.3009647183810555,
+        "tickMem": 3.5335898194732174,
+        "leak": 8.055987558320373,
+        "isolation": 95,
+        "ergonomics": 92
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "gis-maps",
+      "title": "1. Географические карты (GIS, API-запросы, кластеры точек и попапы)",
+      "description": "Поток координат pan/zoom, фильтрация видимых маркеров по bbox без перерисовки неизменных точек, динамическое открытие/закрытие карточек объектов.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 88.9,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 77.5,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 70.5,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 63.3,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 61.3,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 81.9,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 72.4,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 70.4,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 62.4,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 57.7,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    },
+    {
+      "id": "multi-step-forms",
+      "title": "2. Многошаговые формы (валидация, условные ветки, загрузка файлов)",
+      "description": "Сложные графы зависимых полей, ленивое отсечение неактивных шагов мастера, асинхронные статусы загрузки файлов и очистка при смене шага.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 89.6,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 85.6,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 85.3,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 80.2,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        },
+        {
+          "engine": "$mol ($mol_wire_let)",
+          "version": "v1.0.1852",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 76.3,
+          "opsPerSec": 7606,
+          "hardCalls": 3,
+          "nodeBytes": 532.9,
+          "tickAllocBytes": 1343.5,
+          "leakBytes": 1176.89
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 81.1,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 78.7,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 70.1,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 65.5,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 65,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        }
+      ]
+    },
+    {
+      "id": "mfe-cabinet",
+      "title": "3. Личный кабинет на микрофронтендах (MFE разных команд)",
+      "description": "Несколько независимых модулей на одной странице, строгая изоляция сторов без конфликтов глобального состояния и полное уничтожение модуля при уходе.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 85.1,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 79.5,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 78.3,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 70.5,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        },
+        {
+          "engine": "$mol ($mol_wire_let)",
+          "version": "v1.0.1852",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 64.5,
+          "opsPerSec": 7606,
+          "hardCalls": 3,
+          "nodeBytes": 532.9,
+          "tickAllocBytes": 1343.5,
+          "leakBytes": 1176.89
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 74.2,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 73.8,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 71.3,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 63.4,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 61.1,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    },
+    {
+      "id": "ssr-apps",
+      "title": "4. Серверный рендеринг (SSR: Next.js, Nuxt, Angular Universal)",
+      "description": "Создание изолированного графа на каждый HTTP-запрос, быстрая гидратация и гарантированное освобождение памяти после отправки HTML.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 85.1,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 80.5,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 80,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 72.5,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        },
+        {
+          "engine": "$mol ($mol_wire_let)",
+          "version": "v1.0.1852",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 67.2,
+          "opsPerSec": 7606,
+          "hardCalls": 3,
+          "nodeBytes": 532.9,
+          "tickAllocBytes": 1343.5,
+          "leakBytes": 1176.89
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 76.3,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 73.9,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 72.1,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 65,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 64.3,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    },
+    {
+      "id": "realtime-telemetry",
+      "title": "5. Реалтайм-дашборды и стриминг (WebSocket, графики, тикеры)",
+      "description": "Десятки обновлений в секунду: критично отсутствие микрофризов от Minor GC (минимальный Tick Alloc) и пакетное слияние изменений.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 91,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 75,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 68.8,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 65.3,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 58.2,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 83.9,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 78,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 69.9,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 59.7,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 52.5,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    },
+    {
+      "id": "massive-grid",
+      "title": "6. Крупные таблицы и редактор формул (10 000+ реактивных ячеек)",
+      "description": "Десятки тысяч одновременно живущих узлов с перекрёстными зависимостями: решает минимальный вес узла и ленивый пересчёт только видимых ячеек.",
+      "desktopTop5": [
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 83.6,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 83.1,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 73.8,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 71,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        },
+        {
+          "engine": "$mol ($mol_wire_let)",
+          "version": "v1.0.1852",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 68.9,
+          "opsPerSec": 7606,
+          "hardCalls": 3,
+          "nodeBytes": 532.9,
+          "tickAllocBytes": 1343.5,
+          "leakBytes": 1176.89
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 79.9,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 77.3,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 73.5,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 71.8,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 58.1,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    },
+    {
+      "id": "canvas-node-editor",
+      "title": "7. Графические и node-based редакторы (Miro, Figma, конструкторы схем)",
+      "description": "Перетаскивание групп связанных блоков 60–120 FPS: критичен нулевой мусор при drag-and-drop (Tick Alloc) и локальный пересчёт только затронутых связей.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 93.2,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 78,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 68.2,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 67.8,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 63.1,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 86.4,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 76.9,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 72.9,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 55.6,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 55.4,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        }
+      ]
+    },
+    {
+      "id": "offline-local-first",
+      "title": "8. Offline-first / Local-first PWA (долгие сессии, синхронизация дельт)",
+      "description": "Многочасовая работа без перезагрузки вкладки, массовое слияние пакетов синхронизации при появлении сети и строгая защита от утечек памяти (Leak).",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 83.9,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 75.7,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 72.4,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 64.9,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 63.1,
+          "opsPerSec": 7791,
+          "hardCalls": 3,
+          "nodeBytes": 522.6,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 89.01
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 74.7,
+          "opsPerSec": 7941,
+          "hardCalls": 3,
+          "nodeBytes": 517.4,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 18.82
+        },
+        {
+          "engine": "@preact/signals-core",
+          "version": "v1.14.5",
+          "tag": "Minimalist Signal Primitive",
+          "score": 71.8,
+          "opsPerSec": 5389,
+          "hardCalls": 5,
+          "nodeBytes": 257.7,
+          "tickAllocBytes": 401.2,
+          "leakBytes": 10.36
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 70.2,
+          "opsPerSec": 7964,
+          "hardCalls": 3,
+          "nodeBytes": 330.2,
+          "tickAllocBytes": 247.4,
+          "leakBytes": 23.97
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 65.9,
+          "opsPerSec": 5466,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.4
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.4",
+          "tag": "Full-featured Engine + DI",
+          "score": 56.9,
+          "opsPerSec": 8271,
+          "hardCalls": 3,
+          "nodeBytes": 590.7,
+          "tickAllocBytes": 751.5,
+          "leakBytes": 28.32
+        }
+      ]
+    }
+  ]
+}

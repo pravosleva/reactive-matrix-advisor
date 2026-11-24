@@ -1,0 +1,13 @@
+{
+  "name": "reactive-matrix-advisor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scenario-based architecture selector combining CPU collider and V8 memory benchmarks",
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "scripts": {
+    "build": "node analyze.mjs && node generate-svg.mjs && node generate-png.mjs"
+  }
+}
