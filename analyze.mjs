@@ -386,7 +386,7 @@ const archTableRows = Object.entries(ARCH_TRAITS)
   .map(([name, t]) => {
     const ver = versionByEngine.get(name)
     const verBadge = ver ? ` \`${ver}\`` : ''
-    return `| **${name}**${verBadge} | **\`${t.isolation}%\`** \`(${t.isolationFraction})\` | **\`${t.ergonomics}%\`** \`(${t.ergonomicsFraction})\` | ${t.rationale} |`
+    return `| **${name}**${verBadge} | **\`${t.isolation}%\`** (${t.isolationFraction}) | **\`${t.ergonomics}%\`** (${t.ergonomicsFraction}) | ${t.rationale} |`
   })
   .join('\n')
 
@@ -435,7 +435,7 @@ function evaluateProfile(profileWeights) {
 
 const scenarioResults = SCENARIOS.map((sc) => ({
   id: sc.id,
-  title: sc.title,
+  title: `1.${sc.title}`,
   description: sc.description,
   desktopTop5: evaluateProfile(sc.weights.desktop).slice(0, 5),
   mobileTop5: evaluateProfile(sc.weights.mobile).slice(0, 5),
@@ -526,7 +526,7 @@ const readmeContent = `# reactive-matrix-advisor
 
 ## 1. Матрица рекомендаций по сценариям (Топ-5)
 
-${scenarioResults.map(renderScenarioMd).join('\n')}
+${scenarioResults.map(renderScenarioMd).join('\n\n')}
 
 ## 2. Как оцениваются архитектурные свойства движка (\`isolation\` и \`ergonomics\`)
 
