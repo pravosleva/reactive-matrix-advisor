@@ -435,7 +435,7 @@ function evaluateProfile(profileWeights) {
 
 const scenarioResults = SCENARIOS.map((sc) => ({
   id: sc.id,
-  title: `1.${sc.title}`,
+  title: `Сценарий ${sc.title}`,
   description: sc.description,
   desktopTop5: evaluateProfile(sc.weights.desktop).slice(0, 5),
   mobileTop5: evaluateProfile(sc.weights.mobile).slice(0, 5),
