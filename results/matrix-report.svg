@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1457" viewBox="0 0 1120 1457">
   <rect width="100%" height="100%" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
   <text x="32" y="42" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="20" font-weight="700">Reactive Matrix Advisor — Scenario Selection (Desktop vs Mobile)</text>
-  <text x="32" y="66" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12">Sources: mol-collider (2026-11-24) + reactive-memory (2026-11-24)</text>
+  <text x="32" y="66" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12">Sources: mol-collider (2026-11-25) + reactive-memory (2026-11-25)</text>
   <line x1="20" y1="86" x2="1100" y2="86" stroke="#21262d" stroke-width="1" />
   <g transform="translate(0, 105)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -14,33 +14,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="106" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">88.7</text>
+    <rect x="313" y="67" width="93" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">77.8</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="90" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.8</text>
+    <rect x="313" y="95" width="84" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.8</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.5</text>
+    <rect x="313" y="123" width="77" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">64.1</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="98" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">81.4</text>
+    <rect x="857" y="67" width="86" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.5</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.2</text>
+    <rect x="857" y="95" width="80" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.9</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.2</text>
+    <rect x="857" y="123" width="74" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">61.9</text>
   </g>
   <g transform="translate(0, 267)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -52,33 +52,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="106" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">88.1</text>
+    <rect x="313" y="67" width="97" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.5</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="101" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">84.1</text>
+    <rect x="313" y="95" width="96" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.4</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">MobX v7.1.7</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="92" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.3</text>
+    <rect x="313" y="123" width="88" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.4</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="96" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.4</text>
+    <rect x="857" y="67" width="85" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.5</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="88" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.7</text>
+    <rect x="857" y="95" width="81" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.8</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.3</text>
+    <rect x="857" y="123" width="77" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.8</text>
   </g>
   <g transform="translate(0, 429)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -90,33 +90,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="102" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">84.8</text>
+    <rect x="313" y="67" width="87" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.2</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="89" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.0</text>
+    <rect x="313" y="95" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.7</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">MobX v7.1.7</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.1</text>
+    <rect x="313" y="123" width="74" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">61.4</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="89" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.5</text>
+    <rect x="857" y="67" width="72" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.7</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@preact/signals-core v1.14.5</text>
+    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="81" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.6</text>
+    <rect x="857" y="95" width="69" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">57.7</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="81" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.5</text>
+    <rect x="857" y="123" width="68" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">56.5</text>
   </g>
   <g transform="translate(0, 591)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -128,33 +128,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="102" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">85.3</text>
+    <rect x="313" y="67" width="90" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="89" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.3</text>
+    <rect x="313" y="95" width="83" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.8</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="88" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.5</text>
+    <rect x="313" y="123" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.4</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="92" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.5</text>
+    <rect x="857" y="67" width="77" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.9</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.2</text>
+    <rect x="857" y="95" width="75" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">62.2</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="82" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.2</text>
+    <rect x="857" y="123" width="71" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.2</text>
   </g>
   <g transform="translate(0, 753)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -166,33 +166,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="109" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">90.7</text>
+    <rect x="313" y="67" width="98" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.0</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="87" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.2</text>
+    <rect x="313" y="95" width="85" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.7</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.1</text>
+    <rect x="313" y="123" width="74" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">61.6</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="100" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">83.4</text>
+    <rect x="857" y="67" width="91" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">75.8</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="92" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.7</text>
+    <rect x="857" y="95" width="85" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.6</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
     <rect x="857" y="123" width="81" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.7</text>
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.8</text>
   </g>
   <g transform="translate(0, 915)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -202,35 +202,35 @@
     <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
     <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@vue/reactivity v3.5.46</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="99" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.9</text>
+    <rect x="313" y="67" width="94" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.5</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="97" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.8</text>
+    <rect x="313" y="95" width="93" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">77.5</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="87" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.8</text>
+    <rect x="313" y="123" width="85" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.0</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">alien-signals v3.2.1</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="94" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.7</text>
+    <rect x="857" y="67" width="90" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="90" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">75.1</text>
+    <rect x="857" y="95" width="89" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.4</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="88" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.0</text>
+    <rect x="857" y="123" width="82" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.6</text>
   </g>
   <g transform="translate(0, 1077)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -242,33 +242,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="111" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">92.2</text>
+    <rect x="313" y="67" width="104" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">86.8</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="88" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.5</text>
+    <rect x="313" y="95" width="89" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.5</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="82" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.7</text>
+    <rect x="313" y="123" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.9</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="103" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">85.9</text>
+    <rect x="857" y="67" width="98" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">81.5</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="91" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">75.7</text>
+    <rect x="857" y="95" width="88" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.4</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="85" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.7</text>
+    <rect x="857" y="123" width="86" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.9</text>
   </g>
   <g transform="translate(0, 1239)">
     <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
@@ -280,33 +280,33 @@
     <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="100" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">83.4</text>
+    <rect x="313" y="67" width="81" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.5</text>
     <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
     <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.4</text>
     <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.4</text>
+    <rect x="313" y="95" width="73" height="9" rx="3" fill="#475569" />
+    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">61.2</text>
     <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
     <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="84" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.2</text>
+    <rect x="313" y="123" width="72" height="9" rx="3" fill="#475569" />
+    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.6</text>
     <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
     <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
     <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="89" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.5</text>
+    <rect x="857" y="67" width="72" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.7</text>
     <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@preact/signals-core v1.14.5</text>
+    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
     <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="82" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.6</text>
+    <rect x="857" y="95" width="70" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">58.5</text>
     <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
     <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="81" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.4</text>
+    <rect x="857" y="123" width="67" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">56.0</text>
   </g>
-  <text x="32" y="1437" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-25T08:28:41.764Z | Score: 0..100 weighted index (CPU ops/s, hard() pruning, Node B, Tick Alloc B, Dispose Leak &amp; Isolation)</text>
+  <text x="32" y="1437" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-25T16:45:50.629Z | Score: 0..100 weighted index (CPU ops/s, hard() pruning, Node B, Tick Alloc B, Dispose Leak &amp; Isolation)</text>
 </svg>
