@@ -88,4 +88,4 @@ const svgContent = [
 ].join('\n')
 
 fs.writeFileSync(new URL('./matrix-report.svg', resultsDir), svgContent)
-console.log('🖼️  Диаграмма ./results/matrix-report.svg успешно сгенерирована!')
+console.log('Диаграмма ./results/matrix-report.svg успешно сгенерирована!')

@@ -51,7 +51,7 @@ const ENGINE_CAPABILITIES = {
     isolationFlags: {
       scopedContainer: 1,     // new ReactiveEngine() на запрос / модуль
       noGlobalSingletons: 1,  // полное отсутствие глобального состояния
-      snapshotHydration: 1,   // прямой паттерн exportSnapshot / hydrate
+      snapshotHydration: 0,   // нет встроенного API снимков в ядре; реализуется паттерном в сервисах (это, кстати легко добавить)
       cascadeDispose: 1,      // очистка подписок и ресурсов
     },
     ergonomicsFlags: {
@@ -87,7 +87,7 @@ const ENGINE_CAPABILITIES = {
     isolationFlags: {
       scopedContainer: 1,     // контексты выполнения (createCtx / wrap)
       noGlobalSingletons: 1,  // изоляция состояния по контекстам
-      snapshotHydration: 1,   // встроенная сериализация снимков
+      snapshotHydration: 1,   // встроенная сериализация снимков (snapshot)
       cascadeDispose: 1,      // иерархическая отмена и очистка подписок
     },
     ergonomicsFlags: {

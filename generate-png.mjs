@@ -43,7 +43,7 @@ if (!rendered) {
         ],
         { stdio: 'ignore' }
       )
-      console.log(`🖼️  PNG сгенерирован через ${bin} (2x Retina): ./results/matrix-report.png`)
+      console.log(`PNG сгенерирован через ${bin} (2x Retina): ./results/matrix-report.png`)
       rendered = true
       break
     } catch {}
