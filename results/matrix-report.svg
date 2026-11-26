@@ -687,7 +687,7 @@
   </g>
   <g transform="translate(0, 1712)">
     <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
-    <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий Сценарий 9. Мессенджер с множеством чат-комнат (треды, непрочитанные, кэш истории)</text>
+    <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 9. Мессенджер с множеством чат-комнат (треды, непрочитанные, кэш истории)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
     <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
     <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
@@ -771,7 +771,7 @@
   </g>
   <g transform="translate(0, 1910)">
     <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
-    <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий Сценарий 10. Инвестиционное приложение и трейдинг (поток котировок и графики)</text>
+    <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 10. Инвестиционное приложение и трейдинг (поток котировок и графики)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
     <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
     <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
@@ -851,5 +851,5 @@
     <rect x="862" y="145" width="68" height="9" rx="3" fill="#475569" />
     <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.5</text>
   </g>
-<text x="32" y="2144" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-26T14:36:26.992Z | Score: 0..100 weighted index (Speed, SmartGraph, NodeMem, TickMem, Leak, Isolation, DX)</text>
+<text x="32" y="2144" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-26T14:40:28.170Z | Score: 0..100 weighted index (Speed, SmartGraph, NodeMem, TickMem, Leak, Isolation, DX)</text>
 </svg>
