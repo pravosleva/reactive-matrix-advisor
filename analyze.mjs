@@ -341,6 +341,24 @@ const SCENARIOS = [
       mobile: { speed: 0.10, smartGraph: 0.15, nodeMem: 0.25, tickMem: 0.15, leak: 0.25, isolation: 0.05, ergonomics: 0.05 },
     },
   },
+  {
+    id: 'messenger-chat-rooms',
+    title: 'Сценарий 9. Мессенджер с множеством чат-комнат (треды, непрочитанные, кэш истории)',
+    description: 'Тысячи сообщений и десятки активных комнат в памяти, мгновенное переключение чатов без утечек (Leak), фоновый пересчёт счётчиков непрочитанных и статусов онлайн.',
+    weights: {
+      desktop: { speed: 0.15, smartGraph: 0.20, nodeMem: 0.20, tickMem: 0.10, leak: 0.20, isolation: 0.05, ergonomics: 0.10 },
+      mobile:  { speed: 0.10, smartGraph: 0.15, nodeMem: 0.30, tickMem: 0.15, leak: 0.20, isolation: 0.05, ergonomics: 0.05 },
+    },
+  },
+  {
+    id: 'trading-charts-terminal',
+    title: 'Сценарий 10. Инвестиционное приложение и трейдинг (поток котировок и графики)',
+    description: 'Десятки одновременно открытых графиков, стакан заявок (order book) и индикаторы в реальном времени: критичен минимум мусора на тик (Tick Alloc) и отсечение скрытых вкладок.',
+    weights: {
+      desktop: { speed: 0.30, smartGraph: 0.20, nodeMem: 0.05, tickMem: 0.30, leak: 0.05, isolation: 0.00, ergonomics: 0.10 },
+      mobile:  { speed: 0.20, smartGraph: 0.15, nodeMem: 0.20, tickMem: 0.35, leak: 0.05, isolation: 0.00, ergonomics: 0.05 },
+    },
+  },
 ]
 
 const colliderData = await loadJsonSource(

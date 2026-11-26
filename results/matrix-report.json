@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T11:21:35.436Z",
+  "generatedAt": "2026-11-26T14:36:26.992Z",
   "sources": {
     "colliderTimestamp": "2026-11-26T00:40:22.996Z",
     "memoryTimestamp": "2026-11-26T00:40:41.221Z"
@@ -1335,6 +1335,284 @@
           "tickMem": 0.15,
           "leak": 0.25,
           "isolation": 0.05,
+          "ergonomics": 0.05
+        }
+      }
+    },
+    {
+      "id": "messenger-chat-rooms",
+      "title": "Сценарий Сценарий 9. Мессенджер с множеством чат-комнат (треды, непрочитанные, кэш истории)",
+      "description": "Тысячи сообщений и десятки активных комнат в памяти, мгновенное переключение чатов без утечек (Leak), фоновый пересчёт счётчиков непрочитанных и статусов онлайн.",
+      "desktopTop5": [
+        {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 78,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 66.8,
+          "opsPerSec": 8388,
+          "hardCalls": 3,
+          "nodeBytes": 517.3,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 55.1
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 60.5,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 60,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        },
+        {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 55.5,
+          "opsPerSec": 7990,
+          "hardCalls": 3,
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 70.26
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 73.3,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 63.1,
+          "opsPerSec": 8388,
+          "hardCalls": 3,
+          "nodeBytes": 517.3,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 55.1
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 61.5,
+          "opsPerSec": 4844,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 121.7,
+          "leakBytes": 26.44
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 57.9,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 50.4,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        }
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.15,
+          "smartGraph": 0.2,
+          "nodeMem": 0.2,
+          "tickMem": 0.1,
+          "leak": 0.2,
+          "isolation": 0.05,
+          "ergonomics": 0.1
+        },
+        "mobile": {
+          "speed": 0.1,
+          "smartGraph": 0.15,
+          "nodeMem": 0.3,
+          "tickMem": 0.15,
+          "leak": 0.2,
+          "isolation": 0.05,
+          "ergonomics": 0.05
+        }
+      }
+    },
+    {
+      "id": "trading-charts-terminal",
+      "title": "Сценарий Сценарий 10. Инвестиционное приложение и трейдинг (поток котировок и графики)",
+      "description": "Десятки одновременно открытых графиков, стакан заявок (order book) и индикаторы в реальном времени: критичен минимум мусора на тик (Tick Alloc) и отсечение скрытых вкладок.",
+      "desktopTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 88.1,
+          "opsPerSec": 8388,
+          "hardCalls": 3,
+          "nodeBytes": 517.3,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 55.1
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 69.6,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        },
+        {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 63.8,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 62.7,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 60.5,
+          "opsPerSec": 4844,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 121.7,
+          "leakBytes": 26.44
+        }
+      ],
+      "mobileTop5": [
+        {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 82.2,
+          "opsPerSec": 8388,
+          "hardCalls": 3,
+          "nodeBytes": 517.3,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 55.1
+        },
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 72.1,
+          "opsPerSec": 4844,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 121.7,
+          "leakBytes": 26.44
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 59.5,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 58.9,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 57,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        }
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.3,
+          "smartGraph": 0.2,
+          "nodeMem": 0.05,
+          "tickMem": 0.3,
+          "leak": 0.05,
+          "isolation": 0,
+          "ergonomics": 0.1
+        },
+        "mobile": {
+          "speed": 0.2,
+          "smartGraph": 0.15,
+          "nodeMem": 0.2,
+          "tickMem": 0.35,
+          "leak": 0.05,
+          "isolation": 0,
           "ergonomics": 0.05
         }
       }

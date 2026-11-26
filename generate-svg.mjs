@@ -63,6 +63,14 @@ const FALLBACK_WEIGHTS = {
     desktop: { speed: 0.20, smartGraph: 0.20, nodeMem: 0.05, tickMem: 0.10, leak: 0.25, isolation: 0.10, ergonomics: 0.10 },
     mobile: { speed: 0.10, smartGraph: 0.15, nodeMem: 0.25, tickMem: 0.15, leak: 0.25, isolation: 0.05, ergonomics: 0.05 },
   },
+  'messenger-chat-rooms': {
+    desktop: { speed: 0.15, smartGraph: 0.20, nodeMem: 0.20, tickMem: 0.10, leak: 0.20, isolation: 0.05, ergonomics: 0.10 },
+    mobile: { speed: 0.10, smartGraph: 0.15, nodeMem: 0.30, tickMem: 0.15, leak: 0.20, isolation: 0.05, ergonomics: 0.05 },
+  },
+  'trading-charts-terminal': {
+    desktop: { speed: 0.30, smartGraph: 0.20, nodeMem: 0.05, tickMem: 0.30, leak: 0.05, isolation: 0.00, ergonomics: 0.10 },
+    mobile: { speed: 0.20, smartGraph: 0.15, nodeMem: 0.20, tickMem: 0.35, leak: 0.05, isolation: 0.00, ergonomics: 0.05 },
+  },
 }
 
 const renderCriteriaLegend = (startX, y) => {
