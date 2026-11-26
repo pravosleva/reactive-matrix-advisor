@@ -1,5 +1,6 @@
 import fs from 'node:fs'
 import path from 'node:path'
+import { AbstractService, ReactiveEngine } from '@pravosleva/reactive-engine'
 
 // 1. Чтение .env без внешних библиотек (Node 22+)
 const envPath = new URL('./.env', import.meta.url)
@@ -361,195 +362,220 @@ const SCENARIOS = [
   },
 ]
 
-const colliderData = await loadJsonSource(
-  process.env.COLLIDER_JSON_PATH,
-  process.env.COLLIDER_JSON_URL,
-  DEFAULT_COLLIDER_URL
-)
-const memoryData = await loadJsonSource(
-  process.env.MEMORY_JSON_PATH,
-  process.env.MEMORY_JSON_URL,
-  DEFAULT_MEMORY_URL
-)
+// ============================================================================
+// Сервис анализа на базе @pravosleva/reactive-engine (AbstractService + resource + when)
+// ============================================================================
+class MatrixAdvisorService extends AbstractService {
+  // Параметры источников из окружения
+  config = this.engine.signal(
+    {
+      colliderLocalPath: process.env.COLLIDER_JSON_PATH,
+      colliderUrl: process.env.COLLIDER_JSON_URL,
+      memoryLocalPath: process.env.MEMORY_JSON_PATH,
+      memoryUrl: process.env.MEMORY_JSON_URL,
+    },
+    'advisor:config'
+  )
 
-// Объединяем метрики двух бенчмарков по имени движка
-const memoryMap = new Map(memoryData.results.map((r) => [normalizeName(r.Engine), r]))
-const mergedEngines = colliderData.results.map((c) => {
-  const key = normalizeName(c.Engine)
-  const m = memoryMap.get(key)
-  if (!m) throw new Error(`Не найдена пара в memory-benchmark для движка: ${key}`)
-  const hardCount = Number.parseInt(String(c['hard() calls']), 10) || 6
-  const traits = ARCH_TRAITS[key] || { isolation: 50, ergonomics: 50, tag: 'Reactive Engine' }
+  // Параллельный ресурс №1: замеры вычислительного коллайдера
+  colliderResource = this.engine.resource(
+    (cfg, signal) =>
+      loadJsonSource(cfg.colliderLocalPath, cfg.colliderUrl, DEFAULT_COLLIDER_URL, signal),
+    this.config,
+    'advisor:colliderResource'
+  )
 
-  return {
-    engine: key,
-    version: c.Version || m.Version || '',
-    tag: traits.tag,
-    opsPerSec: Number(c['ops/sec']),
-    bestTimeMs: Number(c['Best Time (ms)']),
-    hardCalls: hardCount,
-    nodeBytes: Number(m['Node (B)']),
-    tickAllocBytes: Number(m['Tick Alloc (B)']),
-    leakBytes: Number(m['Leak (B/cycle)']),
-    isolation: traits.isolation,
-    ergonomics: traits.ergonomics,
-  }
-})
+  // Параллельный ресурс №2: замеры памяти и GC
+  memoryResource = this.engine.resource(
+    (cfg, signal) =>
+      loadJsonSource(cfg.memoryLocalPath, cfg.memoryUrl, DEFAULT_MEMORY_URL, signal),
+    this.config,
+    'advisor:memoryResource'
+  )
 
-const versionByEngine = new Map(mergedEngines.map((e) => [e.engine, e.version]))
+  // Вычисляемый узел нормализации и скоринга всех 10 движков
+  scoredEngines = this.engine.computed(() => {
+    const colliderData = this.colliderResource.value.data
+    const memoryData = this.memoryResource.value.data
+    if (!colliderData || !memoryData) return []
 
-const archTableHeader = [
-  '| Движок | `isolation` | `ergonomics` | Почему выставлены именно такие значения |',
-  '| :--- | :---: | :---: | :--- |',
-].join('\n')
+    const memoryMap = new Map(memoryData.results.map((r) => [normalizeName(r.Engine), r]))
+    const mergedEngines = colliderData.results.map((c) => {
+      const key = normalizeName(c.Engine)
+      const m = memoryMap.get(key)
+      if (!m) throw new Error(`Не найдена пара в memory-benchmark для движка: ${key}`)
+      const hardCount = Number.parseInt(String(c['hard() calls']), 10) || 6
+      const traits = ARCH_TRAITS[key] || { isolation: 50, ergonomics: 50, tag: 'Reactive Engine' }
 
-const archTableRows = Object.entries(ARCH_TRAITS)
-  .sort((a, b) => b.at(1).isolation + b.at(1).ergonomics - (a.at(1).isolation + a.at(1).ergonomics))
-  .map(([name, t]) => {
-    const ver = versionByEngine.get(name)
-    const verBadge = ver ? ` \`${ver}\`` : ''
-    return `| **${name}**${verBadge} | **\`${t.isolation}%\`** (${t.isolationFraction}) | **\`${t.ergonomics}%\`** (${t.ergonomicsFraction}) | ${t.rationale} |`
-  })
-  .join('\n')
-
-// Нормализация показателей (0..100 баллов, где 100 — лучший результат в выборке)
-const maxOps = Math.max(...mergedEngines.map((e) => e.opsPerSec))
-const minNode = Math.min(...mergedEngines.map((e) => e.nodeBytes))
-const minTick = Math.min(...mergedEngines.map((e) => e.tickAllocBytes))
-const minLeak = Math.min(...mergedEngines.map((e) => e.leakBytes))
-
-const scoredEngines = mergedEngines.map((e) => ({
-  ...e,
-  norm: {
-    speed: (e.opsPerSec / maxOps) * 100,
-    // 3 вызова hard() = 100 баллов, 4 = 70, 5 = 40, 6 = 15
-    smartGraph: e.hardCalls <= 3 ? 100 : e.hardCalls === 4 ? 70 : e.hardCalls === 5 ? 40 : 15,
-    nodeMem: (minNode / Math.max(e.nodeBytes, 1)) * 100,
-    tickMem: (minTick / Math.max(e.tickAllocBytes, 1)) * 100,
-    // Плавная шкала утечек: <= 15 B/cyc ~ 90-100 баллов, > 400 B/cyc ~ штраф
-    leak: e.leakBytes <= 1 ? 100 : Math.min(100, (1 / e.leakBytes) * 100),
-    isolation: e.isolation,
-    ergonomics: e.ergonomics,
-  },
-}))
-
-function evaluateProfile(profileWeights) {
-  return scoredEngines
-    .map((e) => {
-      let total = 0
-      for (const [k, w] of Object.entries(profileWeights)) {
-        total += (e.norm[k] || 0) * w
-      }
       return {
-        engine: e.engine,
-        version: e.version,
-        tag: e.tag,
-        score: Number(total.toFixed(1)),
-        opsPerSec: e.opsPerSec,
-        hardCalls: e.hardCalls,
-        nodeBytes: e.nodeBytes,
-        tickAllocBytes: e.tickAllocBytes,
-        leakBytes: e.leakBytes,
+        engine: key,
+        version: c.Version || m.Version || '',
+        tag: traits.tag,
+        opsPerSec: Number(c['ops/sec']),
+        bestTimeMs: Number(c['Best Time (ms)']),
+        hardCalls: hardCount,
+        nodeBytes: Number(m['Node (B)']),
+        tickAllocBytes: Number(m['Tick Alloc (B)']),
+        leakBytes: Number(m['Leak (B/cycle)']),
+        isolation: traits.isolation,
+        ergonomics: traits.ergonomics,
       }
     })
-    .sort((a, b) => b.score - a.score)
-}
 
-const scenarioResults = SCENARIOS.map((sc) => ({
-  id: sc.id,
-  title: `Сценарий ${sc.title}`,
-  description: sc.description,
-  desktopTop5: evaluateProfile(sc.weights.desktop).slice(0, 5),
-  mobileTop5: evaluateProfile(sc.weights.mobile).slice(0, 5),
-  weights: sc.weights, // Для рендера шкалы весов на SVG
-}))
+    const maxOps = Math.max(...mergedEngines.map((e) => e.opsPerSec))
+    const minNode = Math.min(...mergedEngines.map((e) => e.nodeBytes))
+    const minTick = Math.min(...mergedEngines.map((e) => e.tickAllocBytes))
 
-const report = {
-  generatedAt: new Date().toISOString(),
-  sources: {
-    colliderTimestamp: colliderData.timestamp,
-    memoryTimestamp: memoryData.timestamp,
-  },
-  engines: scoredEngines,
-  scenarios: scenarioResults,
-}
+    return mergedEngines.map((e) => ({
+      ...e,
+      norm: {
+        speed: (e.opsPerSec / maxOps) * 100,
+        // 3 вызова hard() = 100 баллов, 4 = 70, 5 = 40, 6 = 15
+        smartGraph: e.hardCalls <= 3 ? 100 : e.hardCalls === 4 ? 70 : e.hardCalls === 5 ? 40 : 15,
+        nodeMem: (minNode / Math.max(e.nodeBytes, 1)) * 100,
+        tickMem: (minTick / Math.max(e.tickAllocBytes, 1)) * 100,
+        // Плавная шкала утечек: <= 15 B/cyc ~ 90-100 баллов, > 400 B/cyc ~ штраф
+        leak: e.leakBytes <= 1 ? 100 : Math.min(100, (1 / e.leakBytes) * 100),
+        isolation: e.isolation,
+        ergonomics: e.ergonomics,
+      },
+    }))
+  }, 'advisor:scoredEngines')
 
-const resultsDir = new URL('./results/', import.meta.url)
-fs.mkdirSync(resultsDir, { recursive: true })
-fs.writeFileSync(new URL('./matrix-report.json', resultsDir), JSON.stringify(report, null, 2))
+  // Вычисляемый узел итогового JSON-отчёта по 10 сценариям
+  report = this.engine.computed(() => {
+    const colliderData = this.colliderResource.value.data
+    const memoryData = this.memoryResource.value.data
+    const engines = this.scoredEngines.value
+    if (!colliderData || !memoryData || engines.length === 0) return null
 
-// Генерация README.md
-const renderScenarioMd = (sc) => {
-  const rows = Array.from({ length: 5 }, (_, idx) => idx)
-    .map((idx) => {
-      const d = sc.desktopTop5.at(idx)
-      const m = sc.mobileTop5.at(idx)
-      const dStr = `**${d.engine}** \`${d.version}\` (**${d.score}**) — \`${d.opsPerSec} ops/s\`, \`${d.nodeBytes} B/node\``
-      const mStr = `**${m.engine}** \`${m.version}\` (**${m.score}**) — \`${m.nodeBytes} B/node\`, \`${m.tickAllocBytes} B/tick\``
-      return `| **#${idx + 1}** | ${dStr} | ${mStr} |`
-    })
-    .join('\n')
+    const evaluateProfile = (profileWeights) =>
+      engines
+        .map((e) => {
+          let total = 0
+          for (const [k, w] of Object.entries(profileWeights)) {
+            total += (e.norm[k] || 0) * w
+          }
+          return {
+            engine: e.engine,
+            version: e.version,
+            tag: e.tag,
+            score: Number(total.toFixed(1)),
+            opsPerSec: e.opsPerSec,
+            hardCalls: e.hardCalls,
+            nodeBytes: e.nodeBytes,
+            tickAllocBytes: e.tickAllocBytes,
+            leakBytes: e.leakBytes,
+          }
+        })
+        .sort((a, b) => b.score - a.score)
 
-  return `### ${sc.title}
+    const scenarios = SCENARIOS.map((sc) => ({
+      id: sc.id,
+      title: `Сценарий ${sc.title}`,
+      description: sc.description,
+      desktopTop5: evaluateProfile(sc.weights.desktop).slice(0, 5),
+      mobileTop5: evaluateProfile(sc.weights.mobile).slice(0, 5),
+      weights: sc.weights,
+    }))
 
-${sc.description}
+    return {
+      generatedAt: new Date().toISOString(),
+      sources: {
+        colliderTimestamp: colliderData.timestamp,
+        memoryTimestamp: memoryData.timestamp,
+      },
+      engines,
+      scenarios,
+    }
+  }, 'advisor:report')
 
-| Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
-| :---: | :--- | :--- |
-${rows}`
-}
+  flagIcon = (val) => (val ? '✅' : '—')
 
-const flagIcon = (val) => (val ? '✅' : '—')
+  // Вычисляемый узел генерации README.md
+  readmeMarkdown = this.engine.computed(() => {
+    const report = this.report.value
+    if (!report) return null
 
-const capabilitiesTableHeader = [
-  '| Движок | `isolation` (%) | Scoped Container | No Global Singletons | Snapshot / Hydration | Cascade Dispose | `ergonomics` (%) | Built-in DI | Custom `equals` | Sync Batching | Async Resource | Deep Proxy |',
-  '| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |',
-].join('\n')
+    const versionByEngine = new Map(report.engines.map((e) => [e.engine, e.version]))
 
-const capabilitiesTableRows = Object.entries(ARCH_TRAITS)
-  .sort((a, b) => b[1].isolation + b[1].ergonomics - (a[1].isolation + a[1].ergonomics))
-  .map(([name, t]) => {
-    const iso = t.isolationFlags
-    const erg = t.ergonomicsFlags
-    return [
-      `| **${name}**`,
-      `\`${t.isolation}%\``,
-      flagIcon(iso.scopedContainer),
-      flagIcon(iso.noGlobalSingletons),
-      flagIcon(iso.snapshotHydration),
-      flagIcon(iso.cascadeDispose),
-      `\`${t.ergonomics}%\``,
-      flagIcon(erg.builtInDi),
-      flagIcon(erg.customEquals),
-      flagIcon(erg.batchingSupport),
-      flagIcon(erg.asyncPrimitive),
-      `${flagIcon(erg.deepReactive)} |`,
-    ].join(' | ')
-  })
-  .join('\n')
+    const archTableHeader = [
+      '| Движок | `isolation` | `ergonomics` | Почему выставлены именно такие значения |',
+      '| :--- | :---: | :---: | :--- |',
+    ].join('\n')
 
-const weightsTableHeader = [
-  '| Сценарий | Профиль | `speed` | `smartGraph` | `nodeMem` | `tickMem` | `leak` | `isolation` | `ergonomics` |',
-  '| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |',
-].join('\n')
+    const archTableRows = Object.entries(ARCH_TRAITS)
+      .sort((a, b) => b[1].isolation + b[1].ergonomics - (a[1].isolation + a[1].ergonomics))
+      .map(([name, t]) => {
+        const ver = versionByEngine.get(name)
+        const verBadge = ver ? ` \`${ver}\`` : ''
+        return `| **${name}**${verBadge} | **\`${t.isolation}%\`** (${t.isolationFraction}) | **\`${t.ergonomics}%\`** (${t.ergonomicsFraction}) | ${t.rationale} |`
+      })
+      .join('\n')
 
-const weightsTableRows = SCENARIOS.map((sc) => {
-  const d = sc.weights.desktop
-  const m = sc.weights.mobile
-  return `| **${sc.title}** | 💻 / 📱 | \`${d.speed.toFixed(2)}\` / \`${m.speed.toFixed(2)}\` | \`${d.smartGraph.toFixed(2)}\` / \`${m.smartGraph.toFixed(2)}\` | \`${d.nodeMem.toFixed(2)}\` / \`${m.nodeMem.toFixed(2)}\` | \`${d.tickMem.toFixed(2)}\` / \`${m.tickMem.toFixed(2)}\` | \`${d.leak.toFixed(2)}\` / \`${m.leak.toFixed(2)}\` | \`${d.isolation.toFixed(2)}\` / \`${m.isolation.toFixed(2)}\` | \`${d.ergonomics.toFixed(2)}\` / \`${m.ergonomics.toFixed(2)}\` |`
-}).join('\n')
+    const renderScenarioMd = (sc) => {
+      const rows = Array.from({ length: 5 }, (_, idx) => idx)
+        .map((idx) => {
+          const d = sc.desktopTop5.at(idx)
+          const m = sc.mobileTop5.at(idx)
+          const dStr = `**${d.engine}** \`${d.version}\` (**${d.score}**) — \`${d.opsPerSec} ops/s\`, \`${d.nodeBytes} B/node\``
+          const mStr = `**${m.engine}** \`${m.version}\` (**${m.score}**) — \`${m.nodeBytes} B/node\`, \`${m.tickAllocBytes} B/tick\``
+          return `| **#${idx + 1}** | ${dStr} | ${mStr} |`
+        })
+        .join('\n')
 
-const readmeContent = `# reactive-matrix-advisor
+      return `### ${sc.title}\n\n${sc.description}\n\n| Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |\n| :---: | :--- | :--- |\n${rows}`
+    }
+
+    const capabilitiesTableHeader = [
+      '| Движок | `isolation` (%) | Scoped Container | No Global Singletons | Snapshot / Hydration | Cascade Dispose | `ergonomics` (%) | Built-in DI | Custom `equals` | Sync Batching | Async Resource | Deep Proxy |',
+      '| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |',
+    ].join('\n')
+
+    const capabilitiesTableRows = Object.entries(ARCH_TRAITS)
+      .sort((a, b) => b[1].isolation + b[1].ergonomics - (a[1].isolation + a[1].ergonomics))
+      .map(([name, t]) => {
+        const iso = t.isolationFlags
+        const erg = t.ergonomicsFlags
+        return [
+          `| **${name}**`,
+          `\`${t.isolation}%\``,
+          this.flagIcon(iso.scopedContainer),
+          this.flagIcon(iso.noGlobalSingletons),
+          this.flagIcon(iso.snapshotHydration),
+          this.flagIcon(iso.cascadeDispose),
+          `\`${t.ergonomics}%\``,
+          this.flagIcon(erg.builtInDi),
+          this.flagIcon(erg.customEquals),
+          this.flagIcon(erg.batchingSupport),
+          this.flagIcon(erg.asyncPrimitive),
+          `${this.flagIcon(erg.deepReactive)} |`,
+        ].join(' | ')
+      })
+      .join('\n')
+
+    const weightsTableHeader = [
+      '| Сценарий | Профиль | `speed` | `smartGraph` | `nodeMem` | `tickMem` | `leak` | `isolation` | `ergonomics` |',
+      '| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |',
+    ].join('\n')
+
+    const weightsTableRows = SCENARIOS.map((sc) => {
+      const d = sc.weights.desktop
+      const m = sc.weights.mobile
+      return `| **${sc.title}** | 💻 / 📱 | \`${d.speed.toFixed(2)}\` / \`${m.speed.toFixed(2)}\` | \`${d.smartGraph.toFixed(2)}\` / \`${m.smartGraph.toFixed(2)}\` | \`${d.nodeMem.toFixed(2)}\` / \`${m.nodeMem.toFixed(2)}\` | \`${d.tickMem.toFixed(2)}\` / \`${m.tickMem.toFixed(2)}\` | \`${d.leak.toFixed(2)}\` / \`${m.leak.toFixed(2)}\` | \`${d.isolation.toFixed(2)}\` / \`${m.isolation.toFixed(2)}\` | \`${d.ergonomics.toFixed(2)}\` / \`${m.ergonomics.toFixed(2)}\` |`
+    }).join('\n')
+
+    return `# reactive-matrix-advisor
 
 ![Reactive Matrix Advisor](./results/matrix-report.png)
 
 Практический матричный анализатор для выбора реактивного движка под реальные продуктовые сценарии (для **Desktop / Laptop** и **Mobile / Low-RAM**), объединяющий физические замеры двух изолированных стендов и чек-лист архитектурных возможностей API:
-1. **Вычислительный коллайдер:** [\`mol-collider-benchmark\`](https://github.com/pravosleva/mol-collider-benchmark) (\`${colliderData.timestamp}\`)
-2. **Коллайдер памяти и GC:** [\`reactive-memory-benchmark\`](https://github.com/pravosleva/reactive-memory-benchmark) (\`${memoryData.timestamp}\`)
+1. **Вычислительный коллайдер:** [\`mol-collider-benchmark\`](https://github.com/pravosleva/mol-collider-benchmark) (\`${report.sources.colliderTimestamp}\`)
+2. **Коллайдер памяти и GC:** [\`reactive-memory-benchmark\`](https://github.com/pravosleva/reactive-memory-benchmark) (\`${report.sources.memoryTimestamp}\`)
 
 ## 1. Матрица рекомендаций по сценариям (Топ-5)
 
-${scenarioResults.map(renderScenarioMd).join('\n\n')}
+${report.scenarios.map(renderScenarioMd).join('\n\n')}
 
 ## 2. Как оцениваются архитектурные свойства движка (\`isolation\` и \`ergonomics\`)
 
@@ -582,6 +608,39 @@ cp .env.example .env
 npm run build
 \`\`\`
 `
+  }, 'advisor:readmeMarkdown')
+}
 
-fs.writeFileSync(new URL('./README.md', import.meta.url), readmeContent)
-console.log('✅ Отчёт ./results/matrix-report.json и ./README.md успешно сгенерированы!')
+// ============================================================================
+// Точка входа: ожидаем завершения подгрузки обоих ресурсов через engine.when()
+// ============================================================================
+const engine = new ReactiveEngine({ logger: { isEnabled: false } })
+const advisor = engine.inject(MatrixAdvisorService)
+
+try {
+  await engine.when(
+    () => !advisor.colliderResource.value.loading && !advisor.memoryResource.value.loading,
+    { timeoutMs: 15000 }
+  )
+
+  if (advisor.colliderResource.value.error) {
+    throw advisor.colliderResource.value.error
+  }
+  if (advisor.memoryResource.value.error) {
+    throw advisor.memoryResource.value.error
+  }
+
+  const resultsDir = new URL('./results/', import.meta.url)
+  fs.mkdirSync(resultsDir, { recursive: true })
+  fs.writeFileSync(
+    new URL('./matrix-report.json', resultsDir),
+    JSON.stringify(advisor.report.value, null, 2)
+  )
+  fs.writeFileSync(new URL('./README.md', import.meta.url), advisor.readmeMarkdown.value)
+
+  console.log('✅ Отчёт ./results/matrix-report.json и ./README.md успешно сгенерированы!')
+  process.exit(0)
+} catch (err) {
+  console.error('❌ Ошибка генерации отчёта:', err)
+  process.exit(1)
+}
