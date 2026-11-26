@@ -443,6 +443,7 @@ const scenarioResults = SCENARIOS.map((sc) => ({
   description: sc.description,
   desktopTop5: evaluateProfile(sc.weights.desktop).slice(0, 5),
   mobileTop5: evaluateProfile(sc.weights.mobile).slice(0, 5),
+  weights: sc.weights, // Для рендера шкалы весов на SVG
 }))
 
 const report = {

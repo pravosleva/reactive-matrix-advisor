@@ -1,312 +1,689 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1457" viewBox="0 0 1120 1457">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1768" viewBox="0 0 1120 1768">
   <rect width="100%" height="100%" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5" />
-  <text x="32" y="42" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="20" font-weight="700">Reactive Matrix Advisor — Scenario Selection (Desktop vs Mobile)</text>
-  <text x="32" y="66" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12">Sources: mol-collider (2026-11-26) + reactive-memory (2026-11-26)</text>
-  <line x1="20" y1="86" x2="1100" y2="86" stroke="#21262d" stroke-width="1" />
-  <g transform="translate(0, 105)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+<text x="32" y="40" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="20" font-weight="700">Reactive Matrix Advisor — Scenario Selection (Desktop vs Mobile)</text>
+<text x="32" y="64" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12">Sources: mol-collider (2026-11-26) + reactive-memory (2026-11-26)</text>
+  <rect x="32" y="81" width="11" height="11" rx="2" fill="#38bdf8" />
+  <text x="48" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">Speed</text>
+  <rect x="100" y="81" width="11" height="11" rx="2" fill="#818cf8" />
+  <text x="116" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">SmartGraph</text>
+  <rect x="202" y="81" width="11" height="11" rx="2" fill="#f43f5e" />
+  <text x="218" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">NodeMem</text>
+  <rect x="283.6" y="81" width="11" height="11" rx="2" fill="#fb923c" />
+  <text x="299.6" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">TickMem</text>
+  <rect x="365.20000000000005" y="81" width="11" height="11" rx="2" fill="#facc15" />
+  <text x="381.20000000000005" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">Leak</text>
+  <rect x="426.40000000000003" y="81" width="11" height="11" rx="2" fill="#2dd4bf" />
+  <text x="442.40000000000003" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">Isolation</text>
+  <rect x="521.6" y="81" width="11" height="11" rx="2" fill="#4ade80" />
+  <text x="537.6" y="90" fill="#c9d1d9" font-family="'DejaVu Sans Mono', monospace" font-size="11">DX</text>
+<line x1="20" y1="108" x2="1100" y2="108" stroke="#21262d" stroke-width="1" />
+  <g transform="translate(0, 128)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 1. Географические карты (GIS, API-запросы, кластеры точек и попапы)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="96" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">79.7</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="87" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.9</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="79" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.1</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="87" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.7</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="82" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.3</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="74" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">62.0</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="116" height="6" fill="#38bdf8" />
+    <rect x="154" y="61" width="116" height="6" fill="#818cf8" />
+    <rect x="270" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="293" y="61" width="93" height="6" fill="#fb923c" />
+    <rect x="386" y="61" width="70" height="6" fill="#facc15" />
+    <rect x="456" y="61" width="23" height="6" fill="#2dd4bf" />
+    <rect x="479" y="61" width="24" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 25%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 25%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 20%</text>
+    <rect x="278.2" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="288.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 15%</text>
+    <rect x="342.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="352.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 5%</text>
+    <rect x="395.40000000000003" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="405.40000000000003" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="92" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">79.7</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="84" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.9</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="76" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">66.1</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="652" y="61" width="93" height="6" fill="#818cf8" />
+    <rect x="745" y="61" width="93" height="6" fill="#f43f5e" />
+    <rect x="838" y="61" width="116" height="6" fill="#fb923c" />
+    <rect x="954" y="61" width="70" height="6" fill="#facc15" />
+    <rect x="1024" y="61" width="23" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 20%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 20%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 25%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 15%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#484f58" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 0%</text>
+    <rect x="945.1999999999999" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="955.1999999999999" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="84" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">72.7</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="79" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">68.3</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="71" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">62.0</text>
   </g>
-  <g transform="translate(0, 267)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 326)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 2. Многошаговые формы (валидация, условные ветки, загрузка файлов)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="99" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.1</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="98" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.0</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="97" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">81.1</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="94" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.0</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="86" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.7</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="78" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.1</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="93" height="6" fill="#38bdf8" />
+    <rect x="131" y="61" width="140" height="6" fill="#818cf8" />
+    <rect x="271" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="294" y="61" width="23" height="6" fill="#fb923c" />
+    <rect x="317" y="61" width="47" height="6" fill="#facc15" />
+    <rect x="364" y="61" width="47" height="6" fill="#2dd4bf" />
+    <rect x="411" y="61" width="92" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 20%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 30%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 5%</text>
+    <rect x="272.4" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="282.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 10%</text>
+    <rect x="336.79999999999995" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="346.79999999999995" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 10%</text>
+    <rect x="395.4" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="405.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 20%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="94" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.1</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="94" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.0</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="93" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">81.1</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="652" y="61" width="116" height="6" fill="#818cf8" />
+    <rect x="768" y="61" width="93" height="6" fill="#f43f5e" />
+    <rect x="861" y="61" width="47" height="6" fill="#fb923c" />
+    <rect x="908" y="61" width="70" height="6" fill="#facc15" />
+    <rect x="978" y="61" width="23" height="6" fill="#2dd4bf" />
+    <rect x="1001" y="61" width="46" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 25%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 20%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 10%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 15%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 5%</text>
+    <rect x="945.1999999999999" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="955.1999999999999" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 10%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="90" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.0</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="82" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.7</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="75" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.1</text>
   </g>
-  <g transform="translate(0, 429)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 524)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 3. Личный кабинет на микрофронтендах (MFE разных команд)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="97" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.8</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="88" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.6</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="81" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.6</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="92" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.4</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="73" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.8</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="69" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">57.3</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="108" y="61" width="70" height="6" fill="#818cf8" />
+    <rect x="178" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="201" y="61" width="23" height="6" fill="#fb923c" />
+    <rect x="224" y="61" width="93" height="6" fill="#facc15" />
+    <rect x="317" y="61" width="116" height="6" fill="#2dd4bf" />
+    <rect x="433" y="61" width="70" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 15%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 5%</text>
+    <rect x="272.4" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="282.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 20%</text>
+    <rect x="336.79999999999995" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="346.79999999999995" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 25%</text>
+    <rect x="395.4" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="405.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 15%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="93" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.8</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="85" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">73.6</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="78" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">67.6</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="47" height="6" fill="#38bdf8" />
+    <rect x="629" y="61" width="47" height="6" fill="#818cf8" />
+    <rect x="676" y="61" width="116" height="6" fill="#f43f5e" />
+    <rect x="792" y="61" width="47" height="6" fill="#fb923c" />
+    <rect x="839" y="61" width="116" height="6" fill="#facc15" />
+    <rect x="955" y="61" width="70" height="6" fill="#2dd4bf" />
+    <rect x="1025" y="61" width="22" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 10%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 10%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 25%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 10%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 25%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 15%</text>
+    <rect x="951" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="961" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="88" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.4</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="70" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.8</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="66" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">57.3</text>
   </g>
-  <g transform="translate(0, 591)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 722)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 4. Серверный рендеринг (SSR: Next.js, Nuxt, Angular Universal)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="94" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.7</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="92" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.5</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.5</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="90" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="78" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.3</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="72" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.8</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="93" height="6" fill="#38bdf8" />
+    <rect x="131" y="61" width="70" height="6" fill="#818cf8" />
+    <rect x="201" y="61" width="47" height="6" fill="#f43f5e" />
+    <rect x="248" y="61" width="23" height="6" fill="#fb923c" />
+    <rect x="271" y="61" width="70" height="6" fill="#facc15" />
+    <rect x="341" y="61" width="116" height="6" fill="#2dd4bf" />
+    <rect x="457" y="61" width="46" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 20%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 15%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 10%</text>
+    <rect x="219.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="229.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 5%</text>
+    <rect x="278.2" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="288.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 15%</text>
+    <rect x="342.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="352.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 25%</text>
+    <rect x="401.20000000000005" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="411.20000000000005" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 10%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="91" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">78.7</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="88" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">76.5</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.5</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="652" y="61" width="47" height="6" fill="#818cf8" />
+    <rect x="699" y="61" width="116" height="6" fill="#f43f5e" />
+    <rect x="815" y="61" width="47" height="6" fill="#fb923c" />
+    <rect x="862" y="61" width="93" height="6" fill="#facc15" />
+    <rect x="955" y="61" width="70" height="6" fill="#2dd4bf" />
+    <rect x="1025" y="61" width="22" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 10%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 25%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 10%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 20%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 15%</text>
+    <rect x="951" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="961" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="86" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="75" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.3</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="69" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">59.8</text>
   </g>
-  <g transform="translate(0, 753)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 920)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 5. Реалтайм-дашборды и стриминг (WebSocket, графики, тикеры)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="101" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">84.2</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="76" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.5</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="76" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.4</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="93" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">77.2</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.3</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="71" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">58.9</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="140" height="6" fill="#38bdf8" />
+    <rect x="178" y="61" width="70" height="6" fill="#818cf8" />
+    <rect x="248" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="271" y="61" width="140" height="6" fill="#fb923c" />
+    <rect x="411" y="61" width="47" height="6" fill="#facc15" />
+    <rect x="458" y="61" width="23" height="6" fill="#2dd4bf" />
+    <rect x="481" y="61" width="22" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 30%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 15%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 30%</text>
+    <rect x="278.2" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="288.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 10%</text>
+    <rect x="342.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="352.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 5%</text>
+    <rect x="395.40000000000003" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="405.40000000000003" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="97" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">84.2</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="73" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.5</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="73" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">63.4</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="93" height="6" fill="#38bdf8" />
+    <rect x="675" y="61" width="47" height="6" fill="#818cf8" />
+    <rect x="722" y="61" width="93" height="6" fill="#f43f5e" />
+    <rect x="815" y="61" width="163" height="6" fill="#fb923c" />
+    <rect x="978" y="61" width="47" height="6" fill="#facc15" />
+    <rect x="1025" y="61" width="22" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 20%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 10%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 20%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 35%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 10%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#484f58" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 0%</text>
+    <rect x="945.1999999999999" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="955.1999999999999" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="89" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">77.2</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="81" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">70.3</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="68" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">58.9</text>
   </g>
-  <g transform="translate(0, 915)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 1118)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 6. Крупные таблицы и редактор формул (10 000+ реактивных ячеек)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="95" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">79.2</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="90" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">75.2</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="89" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.5</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">alien-signals v3.2.1</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="90" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.7</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="83" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.0</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="116" height="6" fill="#38bdf8" />
+    <rect x="154" y="61" width="116" height="6" fill="#818cf8" />
+    <rect x="270" y="61" width="116" height="6" fill="#f43f5e" />
+    <rect x="386" y="61" width="47" height="6" fill="#fb923c" />
+    <rect x="433" y="61" width="23" height="6" fill="#facc15" />
+    <rect x="456" y="61" width="23" height="6" fill="#2dd4bf" />
+    <rect x="479" y="61" width="24" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 25%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 25%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 25%</text>
+    <rect x="219.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="229.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 10%</text>
+    <rect x="284" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="294" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 5%</text>
+    <rect x="342.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="352.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 5%</text>
+    <rect x="395.40000000000003" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="405.40000000000003" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="91" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">79.2</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="86" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">75.2</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="86" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.5</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="652" y="61" width="70" height="6" fill="#818cf8" />
+    <rect x="722" y="61" width="209" height="6" fill="#f43f5e" />
+    <rect x="931" y="61" width="70" height="6" fill="#fb923c" />
+    <rect x="1001" y="61" width="23" height="6" fill="#facc15" />
+    <rect x="1024" y="61" width="23" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 15%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 45%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 15%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 5%</text>
+    <rect x="886.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="896.6" y="79" fill="#484f58" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 0%</text>
+    <rect x="939.4" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="949.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">alien-signals v3.2.1</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="86" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="80" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.7</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@vue/reactivity v3.5.46</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="79" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.0</text>
   </g>
-  <g transform="translate(0, 1077)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 1316)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 7. Графические и node-based редакторы (Miro, Figma, конструкторы схем)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="106" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">88.5</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="84" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.6</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="78" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.2</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="99" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.6</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="86" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.5</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="72" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.4</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="116" height="6" fill="#38bdf8" />
+    <rect x="154" y="61" width="116" height="6" fill="#818cf8" />
+    <rect x="270" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="293" y="61" width="140" height="6" fill="#fb923c" />
+    <rect x="433" y="61" width="23" height="6" fill="#facc15" />
+    <rect x="456" y="61" width="47" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 25%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 25%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 30%</text>
+    <rect x="278.2" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="288.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 5%</text>
+    <rect x="336.8" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="346.8" y="79" fill="#484f58" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 0%</text>
+    <rect x="389.6" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="399.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 10%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="102" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">88.5</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.6</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="75" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">65.2</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="70" height="6" fill="#38bdf8" />
+    <rect x="652" y="61" width="93" height="6" fill="#818cf8" />
+    <rect x="745" y="61" width="93" height="6" fill="#f43f5e" />
+    <rect x="838" y="61" width="163" height="6" fill="#fb923c" />
+    <rect x="1001" y="61" width="23" height="6" fill="#facc15" />
+    <rect x="1024" y="61" width="23" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 15%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 20%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 20%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 35%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 5%</text>
+    <rect x="886.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="896.6" y="79" fill="#484f58" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 0%</text>
+    <rect x="939.4" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="949.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="95" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">82.6</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="82" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">71.5</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="69" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.4</text>
   </g>
-  <g transform="translate(0, 1239)">
-    <rect x="20" y="0" width="1080" height="148" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g transform="translate(0, 1514)">
+    <rect x="20" y="0" width="1080" height="184" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
     <text x="38" y="26" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="14" font-weight="700">Сценарий 8. Offline-first / Local-first PWA (долгие сессии, синхронизация дельт)</text>
     <line x1="36" y1="36" x2="1084" y2="36" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
-    <text x="582" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
-    <line x1="560" y1="44" x2="560" y2="136" stroke="#21262d" stroke-width="1" />
-    <text x="38" y="76" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="62" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="313" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="67" width="96" height="9" rx="3" fill="#3b82f6" />
-    <text x="503" y="76" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.1</text>
-    <text x="38" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="62" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="313" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="95" width="83" height="9" rx="3" fill="#475569" />
-    <text x="503" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.2</text>
-    <text x="38" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="62" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
-    <rect x="313" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="313" y="123" width="75" height="9" rx="3" fill="#475569" />
-    <text x="503" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">62.7</text>
-    <text x="582" y="76" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
-    <text x="606" y="76" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
-    <rect x="857" y="67" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="67" width="90" height="9" rx="3" fill="#10b981" />
-    <text x="1047" y="76" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
-    <text x="582" y="104" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
-    <text x="606" y="104" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
-    <rect x="857" y="95" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="95" width="73" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="104" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.8</text>
-    <text x="582" y="132" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
-    <text x="606" y="132" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
-    <rect x="857" y="123" width="120" height="9" rx="3" fill="#21262d" />
-    <rect x="857" y="123" width="68" height="9" rx="3" fill="#475569" />
-    <text x="1047" y="132" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">56.7</text>
+    <rect x="40" y="44" width="12" height="8" rx="1.5" fill="none" stroke="#3b82f6" stroke-width="1.4" />
+    <line x1="38" y1="54" x2="54" y2="54" stroke="#3b82f6" stroke-width="1.6" stroke-linecap="round" />
+    <text x="60" y="54" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">DESKTOP / LAPTOP (TOP-3)</text>
+    <rect x="38" y="61" width="93" height="6" fill="#38bdf8" />
+    <rect x="131" y="61" width="93" height="6" fill="#818cf8" />
+    <rect x="224" y="61" width="23" height="6" fill="#f43f5e" />
+    <rect x="247" y="61" width="47" height="6" fill="#fb923c" />
+    <rect x="294" y="61" width="116" height="6" fill="#facc15" />
+    <rect x="410" y="61" width="47" height="6" fill="#2dd4bf" />
+    <rect x="457" y="61" width="46" height="6" fill="#4ade80" />
+    <rect x="38" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="48" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 20%</text>
+    <rect x="96.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="106.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 20%</text>
+    <rect x="155.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="165.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 5%</text>
+    <rect x="213.79999999999998" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="223.79999999999998" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 10%</text>
+    <rect x="278.2" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="288.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 25%</text>
+    <rect x="342.6" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="352.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 10%</text>
+    <rect x="401.20000000000005" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="411.20000000000005" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 10%</text>
+    <text x="38" y="102" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="62" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="318" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="93" width="92" height="9" rx="3" fill="#3b82f6" />
+    <text x="503" y="102" text-anchor="end" fill="#3b82f6" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">80.1</text>
+    <text x="38" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="62" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="318" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="119" width="80" height="9" rx="3" fill="#475569" />
+    <text x="503" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">69.2</text>
+    <text x="38" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="62" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@pravosleva/reactive-engine v3.0.5</text>
+    <rect x="318" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="318" y="145" width="72" height="9" rx="3" fill="#475569" />
+    <text x="503" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">62.7</text>
+    <line x1="560" y1="44" x2="560" y2="170" stroke="#21262d" stroke-width="1" />
+    <rect x="585" y="43" width="9" height="13" rx="1.8" fill="none" stroke="#10b981" stroke-width="1.4" />
+    <circle cx="589.5" cy="53.8" r="0.8" fill="#10b981" />
+    <text x="604" y="54" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="11" font-weight="700">MOBILE / LOW-RAM (TOP-3)</text>
+    <rect x="582" y="61" width="47" height="6" fill="#38bdf8" />
+    <rect x="629" y="61" width="70" height="6" fill="#818cf8" />
+    <rect x="699" y="61" width="116" height="6" fill="#f43f5e" />
+    <rect x="815" y="61" width="70" height="6" fill="#fb923c" />
+    <rect x="885" y="61" width="116" height="6" fill="#facc15" />
+    <rect x="1001" y="61" width="23" height="6" fill="#2dd4bf" />
+    <rect x="1024" y="61" width="23" height="6" fill="#4ade80" />
+    <rect x="582" y="72" width="7" height="7" rx="1.5" fill="#38bdf8" />
+    <text x="592" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Spd 10%</text>
+    <rect x="640.6" y="72" width="7" height="7" rx="1.5" fill="#818cf8" />
+    <text x="650.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Grp 15%</text>
+    <rect x="699.2" y="72" width="7" height="7" rx="1.5" fill="#f43f5e" />
+    <text x="709.2" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Node 25%</text>
+    <rect x="763.6" y="72" width="7" height="7" rx="1.5" fill="#fb923c" />
+    <text x="773.6" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Tick 15%</text>
+    <rect x="828" y="72" width="7" height="7" rx="1.5" fill="#facc15" />
+    <text x="838" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Leak 25%</text>
+    <rect x="892.4" y="72" width="7" height="7" rx="1.5" fill="#2dd4bf" />
+    <text x="902.4" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">Iso 5%</text>
+    <rect x="945.1999999999999" y="72" width="7" height="7" rx="1.5" fill="#4ade80" />
+    <text x="955.1999999999999" y="79" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="9.5">DX 5%</text>
+    <text x="582" y="102" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#1</text>
+    <text x="606" y="102" fill="#f0f6fc" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="700">$mol ($mol_wire_solo) v1.0.1855</text>
+    <rect x="862" y="93" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="93" width="86" height="9" rx="3" fill="#10b981" />
+    <text x="1047" y="102" text-anchor="end" fill="#10b981" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">74.9</text>
+    <text x="582" y="128" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#2</text>
+    <text x="606" y="128" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">@angular/core (Signals) v22.3.0</text>
+    <rect x="862" y="119" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="119" width="70" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="128" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">60.8</text>
+    <text x="582" y="154" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">#3</text>
+    <text x="606" y="154" fill="#c9d1d9" font-family="'DejaVu Sans', sans-serif" font-size="12" font-weight="500">alien-signals v3.2.1</text>
+    <rect x="862" y="145" width="115" height="9" rx="3" fill="#21262d" />
+    <rect x="862" y="145" width="65" height="9" rx="3" fill="#475569" />
+    <text x="1047" y="154" text-anchor="end" fill="#8b949e" font-family="'DejaVu Sans Mono', monospace" font-size="12" font-weight="700">56.7</text>
   </g>
-  <text x="32" y="1437" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-26T02:41:18.587Z | Score: 0..100 weighted index (CPU ops/s, hard() pruning, Node B, Tick Alloc B, Dispose Leak &amp; Isolation)</text>
+<text x="32" y="1748" fill="#6e7681" font-family="'DejaVu Sans Mono', monospace" font-size="11">Generated: 2026-11-26T11:21:35.436Z | Score: 0..100 weighted index (Speed, SmartGraph, NodeMem, TickMem, Leak, Isolation, DX)</text>
 </svg>

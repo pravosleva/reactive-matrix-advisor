@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:41:18.587Z",
+  "generatedAt": "2026-11-26T11:21:35.436Z",
   "sources": {
     "colliderTimestamp": "2026-11-26T00:40:22.996Z",
     "memoryTimestamp": "2026-11-26T00:40:41.221Z"
@@ -344,7 +344,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.25,
+          "smartGraph": 0.25,
+          "nodeMem": 0.05,
+          "tickMem": 0.2,
+          "leak": 0.15,
+          "isolation": 0.05,
+          "ergonomics": 0.05
+        },
+        "mobile": {
+          "speed": 0.15,
+          "smartGraph": 0.2,
+          "nodeMem": 0.2,
+          "tickMem": 0.25,
+          "leak": 0.15,
+          "isolation": 0,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "multi-step-forms",
@@ -463,7 +483,27 @@
           "tickAllocBytes": 1544.5,
           "leakBytes": 70.26
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.2,
+          "smartGraph": 0.3,
+          "nodeMem": 0.05,
+          "tickMem": 0.05,
+          "leak": 0.1,
+          "isolation": 0.1,
+          "ergonomics": 0.2
+        },
+        "mobile": {
+          "speed": 0.15,
+          "smartGraph": 0.25,
+          "nodeMem": 0.2,
+          "tickMem": 0.1,
+          "leak": 0.15,
+          "isolation": 0.05,
+          "ergonomics": 0.1
+        }
+      }
     },
     {
       "id": "mfe-cabinet",
@@ -582,7 +622,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.15,
+          "smartGraph": 0.15,
+          "nodeMem": 0.05,
+          "tickMem": 0.05,
+          "leak": 0.2,
+          "isolation": 0.25,
+          "ergonomics": 0.15
+        },
+        "mobile": {
+          "speed": 0.1,
+          "smartGraph": 0.1,
+          "nodeMem": 0.25,
+          "tickMem": 0.1,
+          "leak": 0.25,
+          "isolation": 0.15,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "ssr-apps",
@@ -701,7 +761,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.2,
+          "smartGraph": 0.15,
+          "nodeMem": 0.1,
+          "tickMem": 0.05,
+          "leak": 0.15,
+          "isolation": 0.25,
+          "ergonomics": 0.1
+        },
+        "mobile": {
+          "speed": 0.15,
+          "smartGraph": 0.1,
+          "nodeMem": 0.25,
+          "tickMem": 0.1,
+          "leak": 0.2,
+          "isolation": 0.15,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "realtime-telemetry",
@@ -820,7 +900,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.3,
+          "smartGraph": 0.15,
+          "nodeMem": 0.05,
+          "tickMem": 0.3,
+          "leak": 0.1,
+          "isolation": 0.05,
+          "ergonomics": 0.05
+        },
+        "mobile": {
+          "speed": 0.2,
+          "smartGraph": 0.1,
+          "nodeMem": 0.2,
+          "tickMem": 0.35,
+          "leak": 0.1,
+          "isolation": 0,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "massive-grid",
@@ -939,7 +1039,27 @@
           "tickAllocBytes": 408.8,
           "leakBytes": 10.36
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.25,
+          "smartGraph": 0.25,
+          "nodeMem": 0.25,
+          "tickMem": 0.1,
+          "leak": 0.05,
+          "isolation": 0.05,
+          "ergonomics": 0.05
+        },
+        "mobile": {
+          "speed": 0.15,
+          "smartGraph": 0.15,
+          "nodeMem": 0.45,
+          "tickMem": 0.15,
+          "leak": 0.05,
+          "isolation": 0,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "canvas-node-editor",
@@ -1058,7 +1178,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.25,
+          "smartGraph": 0.25,
+          "nodeMem": 0.05,
+          "tickMem": 0.3,
+          "leak": 0.05,
+          "isolation": 0,
+          "ergonomics": 0.1
+        },
+        "mobile": {
+          "speed": 0.15,
+          "smartGraph": 0.2,
+          "nodeMem": 0.2,
+          "tickMem": 0.35,
+          "leak": 0.05,
+          "isolation": 0,
+          "ergonomics": 0.05
+        }
+      }
     },
     {
       "id": "offline-local-first",
@@ -1177,7 +1317,27 @@
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
         }
-      ]
+      ],
+      "weights": {
+        "desktop": {
+          "speed": 0.2,
+          "smartGraph": 0.2,
+          "nodeMem": 0.05,
+          "tickMem": 0.1,
+          "leak": 0.25,
+          "isolation": 0.1,
+          "ergonomics": 0.1
+        },
+        "mobile": {
+          "speed": 0.1,
+          "smartGraph": 0.15,
+          "nodeMem": 0.25,
+          "tickMem": 0.15,
+          "leak": 0.25,
+          "isolation": 0.05,
+          "ergonomics": 0.05
+        }
+      }
     }
   ]
 }

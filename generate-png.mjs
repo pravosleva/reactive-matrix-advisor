@@ -1,56 +1,32 @@
 import fs from 'node:fs'
-import { execFileSync } from 'node:child_process'
-import { fileURLToPath } from 'node:url'
+import { Resvg } from '@resvg/resvg-js'
 
 const resultsDir = new URL('./results/', import.meta.url)
-const svgPath = fileURLToPath(new URL('./matrix-report.svg', resultsDir))
-const pngPath = fileURLToPath(new URL('./matrix-report.png', resultsDir))
 
-if (!fs.existsSync(svgPath)) {
-  console.error('❌ Файл ./results/matrix-report.svg не найден.')
-  process.exit(1)
-}
+const targets = [
+  { svg: 'matrix-report.svg', png: 'matrix-report.png' },
+  { svg: 'matrix-report-mobile.svg', png: 'matrix-report-mobile.png' },
+]
 
-const svgContent = fs.readFileSync(svgPath, 'utf8')
-const widthMatch = svgContent.match(/<svg[^>]*\bwidth="(\d+)"/)
-const heightMatch = svgContent.match(/<svg[^>]*\bheight="(\d+)"/)
-const width = widthMatch ? Number(widthMatch.at(1)) : 1120
-const height = heightMatch ? Number(heightMatch.at(1)) : 1133
-
-let rendered = false
-
-try {
-  execFileSync('rsvg-convert', ['-z', '2', svgPath, '-o', pngPath], { stdio: 'ignore' })
-  console.log('🖼️  PNG сгенерирован через rsvg-convert (2x Retina): ./results/matrix-report.png')
-  rendered = true
-} catch {}
-
-if (!rendered) {
-  const browsers = ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser']
-  for (const bin of browsers) {
-    try {
-      execFileSync(
-        bin,
-        [
-          '--headless=old',
-          '--disable-gpu',
-          '--hide-scrollbars',
-          '--default-background-color=0d1117',
-          `--screenshot=${pngPath}`,
-          `--window-size=${width},${height}`,
-          '--force-device-scale-factor=2',
-          `file://${svgPath}`,
-        ],
-        { stdio: 'ignore' }
-      )
-      console.log(`PNG сгенерирован через ${bin} (2x Retina): ./results/matrix-report.png`)
-      rendered = true
-      break
-    } catch {}
+for (const { svg, png } of targets) {
+  const svgPath = new URL(`./${svg}`, resultsDir)
+  if (!fs.existsSync(svgPath)) {
+    console.warn(`⚠️ Файл ./results/${svg} не найден, пропускаем...`)
+    continue
   }
-}
 
-if (!rendered) {
-  console.error('❌ Не удалось сгенерировать PNG.')
-  process.exit(1)
+  const svgContent = fs.readFileSync(svgPath, 'utf8')
+  const resvg = new Resvg(svgContent, {
+    fitTo: { mode: 'zoom', value: 2 }, // 2x Retina для чёткого текста на экранах высокой плотности
+    font: {
+      loadSystemFonts: true,
+      defaultFontFamily: 'DejaVu Sans',
+      monospaceFamily: 'DejaVu Sans Mono',
+    },
+  })
+
+  const pngData = resvg.render()
+  const pngBuffer = pngData.asPng()
+  fs.writeFileSync(new URL(`./${png}`, resultsDir), pngBuffer)
+  console.log(`PNG-отчёт ./results/${png} успешно сгенерирован!`)
 }

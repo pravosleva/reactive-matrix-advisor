@@ -8,6 +8,12 @@
     "node": ">=22.20.0"
   },
   "scripts": {
-    "build": "node analyze.mjs && node generate-svg.mjs && node generate-png.mjs"
+    "build": "node analyze.mjs && node generate-svg.mjs && node generate-svg-mobile.mjs && node generate-png.mjs"
+  },
+  "dependencies": {
+    "@pravosleva/reactive-engine": "^3.0.5"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
   }
 }
