@@ -18,7 +18,7 @@
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**65.7**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**61.5**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **@vue/reactivity** `v3.5.46` (**62.1**) — `8204 ops/s`, `328.6 B/node` | **@vue/reactivity** `v3.5.46` (**57.1**) — `328.6 B/node`, `471.4 B/tick` |
 | **#4** | **MobX** `v7.1.7` (**58.6**) — `7990 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54.4**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**55.2**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**51.8**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**57.9**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**53.3**) — `368.8 B/node`, `582.8 B/tick` |
 
 ### Сценарий 2. Многошаговые формы (валидация, условные ветки, загрузка файлов)
 
@@ -29,8 +29,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**81.8**) — `8388 ops/s`, `517.3 B/node` | **@angular/core (Signals)** `v22.3.0` (**71.5**) — `517.3 B/node`, `119.4 B/tick` |
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**80.8**) — `9136 ops/s`, `607 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**64.5**) — `607 B/node`, `487.5 B/tick` |
 | **#3** | **MobX** `v7.1.7` (**73.8**) — `7990 ops/s`, `522.2 B/node` | **@vue/reactivity** `v3.5.46` (**64**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **@vue/reactivity** `v3.5.46` (**68.5**) — `8204 ops/s`, `328.6 B/node` | **MobX** `v7.1.7` (**60.3**) — `522.2 B/node`, `1544.5 B/tick` |
-| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**63.6**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**58.8**) — `368.8 B/node`, `582.8 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**72.1**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**63**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **@vue/reactivity** `v3.5.46` (**68.5**) — `8204 ops/s`, `328.6 B/node` | **MobX** `v7.1.7` (**60.3**) — `522.2 B/node`, `1544.5 B/tick` |
 
 ### Сценарий 3. Личный кабинет на микрофронтендах (MFE разных команд)
 
@@ -41,8 +41,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**73.2**) — `8388 ops/s`, `517.3 B/node` | **@angular/core (Signals)** `v22.3.0` (**60.3**) — `517.3 B/node`, `119.4 B/tick` |
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**67**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**56.4**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **MobX** `v7.1.7` (**61.7**) — `7990 ops/s`, `522.2 B/node` | **@vue/reactivity** `v3.5.46` (**53.9**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **@vue/reactivity** `v3.5.46` (**58.3**) — `8204 ops/s`, `328.6 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**49**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **Reatom (@reatom/core)** `v1001.3.0` (**52**) — `4847 ops/s`, `1620.1 B/node` | **MobX** `v7.1.7` (**46.8**) — `522.2 B/node`, `1544.5 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**60.8**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**51.4**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **@vue/reactivity** `v3.5.46` (**58.3**) — `8204 ops/s`, `328.6 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**49**) — `607 B/node`, `487.5 B/tick` |
 
 ### Сценарий 4. Серверный рендеринг (SSR: Next.js, Nuxt, Angular Universal)
 
@@ -53,8 +53,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**76.2**) — `8388 ops/s`, `517.3 B/node` | **@angular/core (Signals)** `v22.3.0` (**64.9**) — `517.3 B/node`, `119.4 B/tick` |
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**69.1**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**59**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **@vue/reactivity** `v3.5.46` (**64.6**) — `8204 ops/s`, `328.6 B/node` | **@vue/reactivity** `v3.5.46` (**58.3**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **MobX** `v7.1.7` (**64.4**) — `7990 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**54.5**) — `6462 ops/s`, `368.8 B/node` | **MobX** `v7.1.7` (**51.2**) — `522.2 B/node`, `1544.5 B/tick` |
+| **#4** | **MobX** `v7.1.7` (**64.4**) — `7990 ops/s`, `522.2 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**54.9**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**63.7**) — `6462 ops/s`, `368.8 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54**) — `607 B/node`, `487.5 B/tick` |
 
 ### Сценарий 5. Реалтайм-дашборды и стриминг (WebSocket, графики, тикеры)
 
@@ -66,7 +66,7 @@
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**63.2**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**69.9**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **alien-signals** `v3.2.1` (**61.1**) — `4844 ops/s`, `251 B/node` | **@vue/reactivity** `v3.5.46` (**54.1**) — `328.6 B/node`, `471.4 B/tick` |
 | **#4** | **@vue/reactivity** `v3.5.46` (**59.1**) — `8204 ops/s`, `328.6 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**51.8**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**53.7**) — `7990 ops/s`, `522.2 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**47.4**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**53.7**) — `7990 ops/s`, `522.2 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**48.9**) — `368.8 B/node`, `582.8 B/tick` |
 
 ### Сценарий 6. Крупные таблицы и редактор формул (10 000+ реактивных ячеек)
 
@@ -77,8 +77,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**79.1**) — `8388 ops/s`, `517.3 B/node` | **alien-signals** `v3.2.1` (**74.7**) — `251 B/node`, `121.7 B/tick` |
 | **#2** | **@vue/reactivity** `v3.5.46` (**74.8**) — `8204 ops/s`, `328.6 B/node` | **@angular/core (Signals)** `v22.3.0` (**69.6**) — `517.3 B/node`, `119.4 B/tick` |
 | **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**71.5**) — `9136 ops/s`, `607 B/node` | **@vue/reactivity** `v3.5.46` (**68.6**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **MobX** `v7.1.7` (**67.4**) — `7990 ops/s`, `522.2 B/node` | **@preact/signals-core** `v1.14.5` (**62.9**) — `257.6 B/node`, `408.8 B/tick` |
-| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**66.7**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**61.8**) — `368.8 B/node`, `582.8 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**69.5**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**63.3**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**67.4**) — `7990 ops/s`, `522.2 B/node` | **@preact/signals-core** `v1.14.5` (**62.9**) — `257.6 B/node`, `408.8 B/tick` |
 
 ### Сценарий 7. Графические и node-based редакторы (Miro, Figma, конструкторы схем)
 
@@ -89,8 +89,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**88.4**) — `8388 ops/s`, `517.3 B/node` | **@angular/core (Signals)** `v22.3.0` (**82.5**) — `517.3 B/node`, `119.4 B/tick` |
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**69.4**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**71.3**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **@vue/reactivity** `v3.5.46` (**62.9**) — `8204 ops/s`, `328.6 B/node` | **@vue/reactivity** `v3.5.46` (**59.6**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **alien-signals** `v3.2.1` (**59.7**) — `4844 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**56.8**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**59.6**) — `7990 ops/s`, `522.2 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**53.9**) — `368.8 B/node`, `582.8 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**60.2**) — `6462 ops/s`, `368.8 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**56.8**) — `607 B/node`, `487.5 B/tick` |
+| **#5** | **alien-signals** `v3.2.1` (**59.7**) — `4844 ops/s`, `251 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**55.4**) — `368.8 B/node`, `582.8 B/tick` |
 
 ### Сценарий 8. Offline-first / Local-first PWA (долгие сессии, синхронизация дельт)
 
@@ -101,8 +101,8 @@
 | **#1** | **@angular/core (Signals)** `v22.3.0` (**68.8**) — `8388 ops/s`, `517.3 B/node` | **@angular/core (Signals)** `v22.3.0` (**60.3**) — `517.3 B/node`, `119.4 B/tick` |
 | **#2** | **@pravosleva/reactive-engine** `v3.0.5` (**62**) — `9136 ops/s`, `607 B/node` | **alien-signals** `v3.2.1` (**55.8**) — `251 B/node`, `121.7 B/tick` |
 | **#3** | **MobX** `v7.1.7` (**56.2**) — `7990 ops/s`, `522.2 B/node` | **@vue/reactivity** `v3.5.46` (**52.6**) — `328.6 B/node`, `471.4 B/tick` |
-| **#4** | **@vue/reactivity** `v3.5.46` (**55.8**) — `8204 ops/s`, `328.6 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**47.8**) — `607 B/node`, `487.5 B/tick` |
-| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**49.6**) — `6462 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**47.2**) — `368.8 B/node`, `582.8 B/tick` |
+| **#4** | **@vue/reactivity** `v3.5.46` (**55.8**) — `8204 ops/s`, `328.6 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**49.9**) — `368.8 B/node`, `582.8 B/tick` |
+| **#5** | **$mol ($mol_wire_solo)** `v1.0.1855` (**55.1**) — `6462 ops/s`, `368.8 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**47.8**) — `607 B/node`, `487.5 B/tick` |
 
 ## 2. Как оцениваются архитектурные свойства движка (`isolation` и `ergonomics`)
 
@@ -118,7 +118,7 @@
 | **Effector** `v23.5.2` | **`100%`** (4/4) | **`80%`** (4/5) | Эталонная SSR-изоляция через `Fork API` (`fork`, `serialize`, `clearNode`), доменная декомпозиция, `updateFilter`, встроенная очередь батчинга и эффекты. Строго иммутабельные сторы без глубокого Proxy. |
 | **@pravosleva/reactive-engine** `v3.0.5` | **`75%`** (3/4) | **`100%`** (5/5) | Изолированные инстансы `ReactiveEngine` без глобального состояния, контракт `exportSnapshot`/`hydrate`, встроенный DI (`AbstractService`), `{ equals }`, `batch()`, `resource()` с `AbortSignal` и глубокий Proxy `reactive()`. |
 | **MobX** `v7.1.7` | **`75%`** (3/4) | **`80%`** (4/5) | Изоляция через локальные инстансы сторов и `enableStaticRendering`, `comparer.structural`, `runInAction`, `flow()` и глубокий Proxy `makeAutoObservable`. Нет каскадной очистки подграфа одной командой и встроенного DI. |
-| **$mol ($mol_wire_let)** | **`75%`** (3/4) | **`80%`** (4/5) | Контекст наследования `this.$` (`$mol_ambient`), детерминированные деструкторы, встроенный `$mol_compare_deep`, автобатчинг и прозрачный `sync-over-async`. Нет отдельного API снимков для SSR и глубокого Proxy (используется мемоизация свойств). |
+| **$mol ($mol_wire_solo)** `v1.0.1855` | **`75%`** (3/4) | **`80%`** (4/5) | Контекст наследования `this.$` (`$mol_ambient`), детерминированные деструкторы, встроенный `$mol_compare_deep`, автобатчинг и прозрачный `sync-over-async`. Нет отдельного API снимков для SSR и глубокого Proxy (используется мемоизация свойств). |
 | **SolidJS 2 (@solidjs/signals)** `v2.0.4` | **`75%`** (3/4) | **`60%`** (3/5) | Изоляция подграфов и каскадный `dispose` через `createRoot`, встроенный `{ equals }`, `flush()` и нативная поддержка `Promise` внутри `createMemo`. В пакете сигналов нет DI, SSR-сериализации и глубокого Proxy. |
 | **@vue/reactivity** `v3.5.46` | **`75%`** (3/4) | **`40%`** (2/5) | В изолированном пакете `@vue/reactivity` есть `effectScope` с каскадным `stop()`, внутренний батчинг и глубокий Proxy `reactive()`, но отсутствуют DI, опция `equals` в `computed`, `resource()` и SSR-гидратация (доступны только в Vue/Nuxt). |
 | **alien-signals** `v3.2.1` | **`75%`** (3/4) | **`20%`** (1/5) | Минималистичный push-pull примитив: в v3+ есть `effectScope` для каскадной отписки и `startBatch`/`endBatch`, но полностью отсутствуют DI, компараторы, асинхронные ресурсы и Proxy. |
@@ -135,7 +135,7 @@
 | **Effector** | `100%` | ✅ | ✅ | ✅ | ✅ | `80%` | ✅ | ✅ | ✅ | ✅ | — |
 | **@pravosleva/reactive-engine** | `75%` | ✅ | ✅ | — | ✅ | `100%` | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **MobX** | `75%` | ✅ | ✅ | ✅ | — | `80%` | — | ✅ | ✅ | ✅ | ✅ |
-| **$mol ($mol_wire_let)** | `75%` | ✅ | ✅ | — | ✅ | `80%` | ✅ | ✅ | ✅ | ✅ | — |
+| **$mol ($mol_wire_solo)** | `75%` | ✅ | ✅ | — | ✅ | `80%` | ✅ | ✅ | ✅ | ✅ | — |
 | **SolidJS 2 (@solidjs/signals)** | `75%` | ✅ | ✅ | — | ✅ | `60%` | — | ✅ | ✅ | ✅ | — |
 | **@vue/reactivity** | `75%` | ✅ | ✅ | — | ✅ | `40%` | — | — | ✅ | — | ✅ |
 | **alien-signals** | `75%` | ✅ | ✅ | — | ✅ | `20%` | — | — | ✅ | — | — |

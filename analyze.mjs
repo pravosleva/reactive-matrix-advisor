@@ -175,7 +175,7 @@ const ENGINE_CAPABILITIES = {
     rationale:
       'Изоляция подграфов и каскадный `dispose` через `createRoot`, встроенный `{ equals }`, `flush()` и нативная поддержка `Promise` внутри `createMemo`. В пакете сигналов нет DI, SSR-сериализации и глубокого Proxy.',
   },
-  '$mol ($mol_wire_let)': {
+  '$mol ($mol_wire_solo)': {
     tag: 'Quantum Graph + Deep Compare',
     isolationFlags: {
       scopedContainer: 1,     // $mol_ambient (контекст this.$)
@@ -186,9 +186,10 @@ const ENGINE_CAPABILITIES = {
     ergonomicsFlags: {
       builtInDi: 1,           // наследование контекста this.$
       customEquals: 1,        // встроенный $mol_compare_deep на каждый атом
-      batchingSupport: 1,        // отложенный пересчёт до кадра / чтения
+      batchingSupport: 1,     // отложенный пересчёт до кадра / чтения
       asyncPrimitive: 1,      // прозрачный sync-over-async и $mol_wire_sync
       deepReactive: 0,        // мемоизация свойств вместо глубокого Proxy
+      // В $mol (и в частности в библиотеке mol_wire_lib) реактивность построена исключительно на мемоизации методов/свойств классов (@mol_mem / @mol_mem_key / $mol_wire_solo), а не на глубоких Proxy-обёртках над произвольными JSON-объектами или массивами (как reactive() во Vue, makeAutoObservable в MobX или engine.reactive() в @pravosleva/reactive-engine).
     },
     rationale:
       'Контекст наследования `this.$` (`$mol_ambient`), детерминированные деструкторы, встроенный `$mol_compare_deep`, автобатчинг и прозрачный `sync-over-async`. Нет отдельного API снимков для SSR и глубокого Proxy (используется мемоизация свойств).',

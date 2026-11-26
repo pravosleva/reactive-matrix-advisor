@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T00:42:08.053Z",
+  "generatedAt": "2026-11-26T01:14:10.487Z",
   "sources": {
     "colliderTimestamp": "2026-11-26T00:40:22.996Z",
     "memoryTimestamp": "2026-11-26T00:40:41.221Z"
@@ -96,23 +96,23 @@
     {
       "engine": "$mol ($mol_wire_solo)",
       "version": "v1.0.1855",
-      "tag": "Reactive Engine",
+      "tag": "Quantum Graph + Deep Compare",
       "opsPerSec": 6462,
       "bestTimeMs": 773.78,
       "hardCalls": 3,
       "nodeBytes": 368.8,
       "tickAllocBytes": 582.8,
       "leakBytes": 0,
-      "isolation": 50,
-      "ergonomics": 50,
+      "isolation": 75,
+      "ergonomics": 80,
       "norm": {
         "speed": 70.73117338003503,
         "smartGraph": 100,
         "nodeMem": 68.058568329718,
         "tickMem": 20.487302676733016,
         "leak": null,
-        "isolation": 50,
-        "ergonomics": 50
+        "isolation": 75,
+        "ergonomics": 80
       }
     },
     {
@@ -279,8 +279,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 55.2,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 57.9,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -336,8 +336,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 51.8,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 53.3,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -385,6 +385,17 @@
           "leakBytes": 70.26
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 72.1,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
@@ -394,17 +405,6 @@
           "nodeBytes": 328.6,
           "tickAllocBytes": 471.4,
           "leakBytes": 13.39
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 63.6,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ],
       "mobileTop5": [
@@ -442,6 +442,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 63,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
@@ -451,17 +462,6 @@
           "nodeBytes": 522.2,
           "tickAllocBytes": 1544.5,
           "leakBytes": 70.26
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 58.8,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     },
@@ -504,6 +504,17 @@
           "leakBytes": 70.26
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 60.8,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
@@ -513,17 +524,6 @@
           "nodeBytes": 328.6,
           "tickAllocBytes": 471.4,
           "leakBytes": 13.39
-        },
-        {
-          "engine": "Reatom (@reatom/core)",
-          "version": "v1001.3.0",
-          "tag": "Transactional Atom Graph",
-          "score": 52,
-          "opsPerSec": 4847,
-          "hardCalls": 5,
-          "nodeBytes": 1620.1,
-          "tickAllocBytes": 2001.2,
-          "leakBytes": 185.46
         }
       ],
       "mobileTop5": [
@@ -561,6 +561,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 51.4,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
@@ -570,17 +581,6 @@
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "MobX",
-          "version": "v7.1.7",
-          "tag": "OOP Observable + Comparers",
-          "score": 46.8,
-          "opsPerSec": 7990,
-          "hardCalls": 3,
-          "nodeBytes": 522.2,
-          "tickAllocBytes": 1544.5,
-          "leakBytes": 70.26
         }
       ]
     },
@@ -636,8 +636,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 54.5,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 63.7,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -680,6 +680,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 54.9,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
@@ -689,17 +700,6 @@
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "MobX",
-          "version": "v7.1.7",
-          "tag": "OOP Observable + Comparers",
-          "score": 51.2,
-          "opsPerSec": 7990,
-          "hardCalls": 3,
-          "nodeBytes": 522.2,
-          "tickAllocBytes": 1544.5,
-          "leakBytes": 70.26
         }
       ]
     },
@@ -812,8 +812,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 47.4,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 48.9,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -861,6 +861,17 @@
           "leakBytes": 36.54
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 69.5,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
@@ -870,17 +881,6 @@
           "nodeBytes": 522.2,
           "tickAllocBytes": 1544.5,
           "leakBytes": 70.26
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 66.7,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ],
       "mobileTop5": [
@@ -918,6 +918,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 63.3,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@preact/signals-core",
           "version": "v1.14.5",
           "tag": "Minimalist Signal Primitive",
@@ -927,17 +938,6 @@
           "nodeBytes": 257.6,
           "tickAllocBytes": 408.8,
           "leakBytes": 10.36
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 61.8,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     },
@@ -980,6 +980,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 60.2,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
@@ -989,17 +1000,6 @@
           "nodeBytes": 251,
           "tickAllocBytes": 121.7,
           "leakBytes": 26.44
-        },
-        {
-          "engine": "MobX",
-          "version": "v7.1.7",
-          "tag": "OOP Observable + Comparers",
-          "score": 59.6,
-          "opsPerSec": 7990,
-          "hardCalls": 3,
-          "nodeBytes": 522.2,
-          "tickAllocBytes": 1544.5,
-          "leakBytes": 70.26
         }
       ],
       "mobileTop5": [
@@ -1050,8 +1050,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 53.9,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 55.4,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -1112,8 +1112,8 @@
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 49.6,
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 55.1,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -1156,6 +1156,17 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 49.9,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
@@ -1165,17 +1176,6 @@
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Reactive Engine",
-          "score": 47.2,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     }
