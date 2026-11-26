@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T01:14:10.487Z",
+  "generatedAt": "2026-11-26T02:41:18.587Z",
   "sources": {
     "colliderTimestamp": "2026-11-26T00:40:22.996Z",
     "memoryTimestamp": "2026-11-26T00:40:41.221Z"
@@ -22,7 +22,7 @@
         "smartGraph": 100,
         "nodeMem": 41.35090609555189,
         "tickMem": 24.492307692307694,
-        "leak": 0,
+        "leak": 2.736726874657909,
         "isolation": 75,
         "ergonomics": 100
       }
@@ -44,7 +44,7 @@
         "smartGraph": 100,
         "nodeMem": 48.521167601005224,
         "tickMem": 100,
-        "leak": 0,
+        "leak": 1.8148820326678767,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -66,7 +66,7 @@
         "smartGraph": 100,
         "nodeMem": 76.38466220328667,
         "tickMem": 25.32880780653373,
-        "leak": 0,
+        "leak": 7.468259895444361,
         "isolation": 75,
         "ergonomics": 40
       }
@@ -88,7 +88,7 @@
         "smartGraph": 100,
         "nodeMem": 48.065875143623124,
         "tickMem": 7.730657170605375,
-        "leak": 0,
+        "leak": 1.4232849416453173,
         "isolation": 75,
         "ergonomics": 80
       }
@@ -110,7 +110,7 @@
         "smartGraph": 100,
         "nodeMem": 68.058568329718,
         "tickMem": 20.487302676733016,
-        "leak": null,
+        "leak": 100,
         "isolation": 75,
         "ergonomics": 80
       }
@@ -132,7 +132,7 @@
         "smartGraph": 70,
         "nodeMem": 56.12701252236136,
         "tickMem": 8.886573384935993,
-        "leak": 0,
+        "leak": 0.21687739920622875,
         "isolation": 75,
         "ergonomics": 60
       }
@@ -154,7 +154,7 @@
         "smartGraph": 40,
         "nodeMem": 15.4928708104438,
         "tickMem": 5.966420147911253,
-        "leak": 0,
+        "leak": 0.5391998274560552,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -176,7 +176,7 @@
         "smartGraph": 40,
         "nodeMem": 100,
         "tickMem": 98.11010682004931,
-        "leak": 0,
+        "leak": 3.7821482602118,
         "isolation": 75,
         "ergonomics": 20
       }
@@ -198,7 +198,7 @@
         "smartGraph": 40,
         "nodeMem": 97.43788819875776,
         "tickMem": 29.207436399217222,
-        "leak": 0,
+        "leak": 9.652509652509652,
         "isolation": 25,
         "ergonomics": 20
       }
@@ -220,7 +220,7 @@
         "smartGraph": 15,
         "nodeMem": 4.3009647183810555,
         "tickMem": 3.5335898194732174,
-        "leak": 0,
+        "leak": 0.7851758793969849,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -236,7 +236,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 79.4,
+          "score": 79.7,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -244,10 +244,21 @@
           "leakBytes": 55.1
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 72.9,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 65.7,
+          "score": 66.1,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -258,7 +269,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 62.1,
+          "score": 63.2,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -269,23 +280,12 @@
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 58.6,
+          "score": 58.8,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
           "tickAllocBytes": 1544.5,
           "leakBytes": 70.26
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 57.9,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ],
       "mobileTop5": [
@@ -293,7 +293,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 72.5,
+          "score": 72.7,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -301,10 +301,21 @@
           "leakBytes": 55.1
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 68.3,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 61.5,
+          "score": 62,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -315,7 +326,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 57.1,
+          "score": 58.2,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -326,23 +337,12 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 54.4,
+          "score": 54.8,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 53.3,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     },
@@ -352,10 +352,21 @@
       "description": "Сложные графы зависимых полей, ленивое отсечение неактивных шагов мастера, асинхронные статусы загрузки файлов и очистка при смене шага.",
       "desktopTop5": [
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 82.1,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 81.8,
+          "score": 82,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -366,7 +377,7 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 80.8,
+          "score": 81.1,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -377,7 +388,7 @@
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 73.8,
+          "score": 73.9,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
@@ -385,21 +396,10 @@
           "leakBytes": 70.26
         },
         {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 72.1,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
-        },
-        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 68.5,
+          "score": 69.3,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -409,43 +409,10 @@
       ],
       "mobileTop5": [
         {
-          "engine": "@angular/core (Signals)",
-          "version": "v22.3.0",
-          "tag": "Framework Signals + DI",
-          "score": 71.5,
-          "opsPerSec": 8388,
-          "hardCalls": 3,
-          "nodeBytes": 517.3,
-          "tickAllocBytes": 119.4,
-          "leakBytes": 55.1
-        },
-        {
-          "engine": "@pravosleva/reactive-engine",
-          "version": "v3.0.5",
-          "tag": "Full-featured Engine + DI",
-          "score": 64.5,
-          "opsPerSec": 9136,
-          "hardCalls": 3,
-          "nodeBytes": 607,
-          "tickAllocBytes": 487.5,
-          "leakBytes": 36.54
-        },
-        {
-          "engine": "@vue/reactivity",
-          "version": "v3.5.46",
-          "tag": "Balanced Core + EffectScope",
-          "score": 64,
-          "opsPerSec": 8204,
-          "hardCalls": 3,
-          "nodeBytes": 328.6,
-          "tickAllocBytes": 471.4,
-          "leakBytes": 13.39
-        },
-        {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 63,
+          "score": 78,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -453,10 +420,43 @@
           "leakBytes": 0
         },
         {
+          "engine": "@angular/core (Signals)",
+          "version": "v22.3.0",
+          "tag": "Framework Signals + DI",
+          "score": 71.7,
+          "opsPerSec": 8388,
+          "hardCalls": 3,
+          "nodeBytes": 517.3,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 55.1
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 65.1,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 64.9,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        },
+        {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 60.3,
+          "score": 60.5,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
@@ -471,10 +471,21 @@
       "description": "Несколько независимых модулей на одной странице, строгая изоляция сторов без конфликтов глобального состояния и полное уничтожение модуля при уходе.",
       "desktopTop5": [
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 80.8,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 73.2,
+          "score": 73.6,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -485,7 +496,7 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 67,
+          "score": 67.6,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -496,7 +507,7 @@
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 61.7,
+          "score": 61.9,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
@@ -504,21 +515,10 @@
           "leakBytes": 70.26
         },
         {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 60.8,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
-        },
-        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 58.3,
+          "score": 59.8,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -528,10 +528,21 @@
       ],
       "mobileTop5": [
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 76.4,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 60.3,
+          "score": 60.8,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -542,7 +553,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 56.4,
+          "score": 57.3,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -553,7 +564,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 53.9,
+          "score": 55.7,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -561,21 +572,10 @@
           "leakBytes": 13.39
         },
         {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 51.4,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
-        },
-        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 49,
+          "score": 49.7,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -590,10 +590,21 @@
       "description": "Создание изолированного графа на каждый HTTP-запрос, быстрая гидратация и гарантированное освобождение памяти после отправки HTML.",
       "desktopTop5": [
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 78.7,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 76.2,
+          "score": 76.5,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -604,7 +615,7 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 69.1,
+          "score": 69.5,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -615,7 +626,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 64.6,
+          "score": 65.7,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -626,31 +637,31 @@
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 64.4,
+          "score": 64.6,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
           "tickAllocBytes": 1544.5,
           "leakBytes": 70.26
-        },
+        }
+      ],
+      "mobileTop5": [
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 63.7,
+          "score": 74.9,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
-        }
-      ],
-      "mobileTop5": [
+        },
         {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 64.9,
+          "score": 65.3,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -658,21 +669,10 @@
           "leakBytes": 55.1
         },
         {
-          "engine": "alien-signals",
-          "version": "v3.2.1",
-          "tag": "Low-level Primitive",
-          "score": 59,
-          "opsPerSec": 4844,
-          "hardCalls": 5,
-          "nodeBytes": 251,
-          "tickAllocBytes": 121.7,
-          "leakBytes": 26.44
-        },
-        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 58.3,
+          "score": 59.8,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -680,21 +680,21 @@
           "leakBytes": 13.39
         },
         {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 54.9,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 59.8,
+          "opsPerSec": 4844,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 121.7,
+          "leakBytes": 26.44
         },
         {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 54,
+          "score": 54.6,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -712,7 +712,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 84,
+          "score": 84.2,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -720,10 +720,21 @@
           "leakBytes": 55.1
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 63.5,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 63.2,
+          "score": 63.4,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -734,7 +745,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 61.1,
+          "score": 61.5,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -745,23 +756,12 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 59.1,
+          "score": 59.9,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
           "tickAllocBytes": 471.4,
           "leakBytes": 13.39
-        },
-        {
-          "engine": "MobX",
-          "version": "v7.1.7",
-          "tag": "OOP Observable + Comparers",
-          "score": 53.7,
-          "opsPerSec": 7990,
-          "hardCalls": 3,
-          "nodeBytes": 522.2,
-          "tickAllocBytes": 1544.5,
-          "leakBytes": 70.26
         }
       ],
       "mobileTop5": [
@@ -769,7 +769,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 77.1,
+          "score": 77.2,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -780,7 +780,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 69.9,
+          "score": 70.3,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -788,10 +788,21 @@
           "leakBytes": 26.44
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 58.9,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 54.1,
+          "score": 54.8,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -802,23 +813,12 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 51.8,
+          "score": 52.1,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 48.9,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     },
@@ -831,7 +831,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 79.1,
+          "score": 79.2,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -842,7 +842,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 74.8,
+          "score": 75.2,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -850,21 +850,10 @@
           "leakBytes": 13.39
         },
         {
-          "engine": "@pravosleva/reactive-engine",
-          "version": "v3.0.5",
-          "tag": "Full-featured Engine + DI",
-          "score": 71.5,
-          "opsPerSec": 9136,
-          "hardCalls": 3,
-          "nodeBytes": 607,
-          "tickAllocBytes": 487.5,
-          "leakBytes": 36.54
-        },
-        {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 69.5,
+          "score": 74.5,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -872,10 +861,21 @@
           "leakBytes": 0
         },
         {
+          "engine": "@pravosleva/reactive-engine",
+          "version": "v3.0.5",
+          "tag": "Full-featured Engine + DI",
+          "score": 71.7,
+          "opsPerSec": 9136,
+          "hardCalls": 3,
+          "nodeBytes": 607,
+          "tickAllocBytes": 487.5,
+          "leakBytes": 36.54
+        },
+        {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 67.4,
+          "score": 67.5,
           "opsPerSec": 7990,
           "hardCalls": 3,
           "nodeBytes": 522.2,
@@ -888,7 +888,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 74.7,
+          "score": 74.9,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -899,7 +899,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 69.6,
+          "score": 69.7,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -910,7 +910,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 68.6,
+          "score": 69,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -921,7 +921,7 @@
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 63.3,
+          "score": 68.3,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -932,7 +932,7 @@
           "engine": "@preact/signals-core",
           "version": "v1.14.5",
           "tag": "Minimalist Signal Primitive",
-          "score": 62.9,
+          "score": 63.4,
           "opsPerSec": 4698,
           "hardCalls": 5,
           "nodeBytes": 257.6,
@@ -950,7 +950,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 88.4,
+          "score": 88.5,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -961,7 +961,7 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 69.4,
+          "score": 69.6,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -969,21 +969,10 @@
           "leakBytes": 36.54
         },
         {
-          "engine": "@vue/reactivity",
-          "version": "v3.5.46",
-          "tag": "Balanced Core + EffectScope",
-          "score": 62.9,
-          "opsPerSec": 8204,
-          "hardCalls": 3,
-          "nodeBytes": 328.6,
-          "tickAllocBytes": 471.4,
-          "leakBytes": 13.39
-        },
-        {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 60.2,
+          "score": 65.2,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
@@ -991,10 +980,21 @@
           "leakBytes": 0
         },
         {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 63.2,
+          "opsPerSec": 8204,
+          "hardCalls": 3,
+          "nodeBytes": 328.6,
+          "tickAllocBytes": 471.4,
+          "leakBytes": 13.39
+        },
+        {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 59.7,
+          "score": 59.9,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -1007,7 +1007,7 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 82.5,
+          "score": 82.6,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -1018,7 +1018,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 71.3,
+          "score": 71.5,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -1026,10 +1026,21 @@
           "leakBytes": 26.44
         },
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 60.4,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 59.6,
+          "score": 60,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -1040,23 +1051,12 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 56.8,
+          "score": 57,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
           "tickAllocBytes": 487.5,
           "leakBytes": 36.54
-        },
-        {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 55.4,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
         }
       ]
     },
@@ -1066,10 +1066,21 @@
       "description": "Многочасовая работа без перезагрузки вкладки, массовое слияние пакетов синхронизации при появлении сети и строгая защита от утечек памяти (Leak).",
       "desktopTop5": [
         {
+          "engine": "$mol ($mol_wire_solo)",
+          "version": "v1.0.1855",
+          "tag": "Quantum Graph + Deep Compare",
+          "score": 80.1,
+          "opsPerSec": 6462,
+          "hardCalls": 3,
+          "nodeBytes": 368.8,
+          "tickAllocBytes": 582.8,
+          "leakBytes": 0
+        },
+        {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 68.8,
+          "score": 69.2,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -1080,7 +1091,7 @@
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 62,
+          "score": 62.7,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,
@@ -1088,21 +1099,10 @@
           "leakBytes": 36.54
         },
         {
-          "engine": "MobX",
-          "version": "v7.1.7",
-          "tag": "OOP Observable + Comparers",
-          "score": 56.2,
-          "opsPerSec": 7990,
-          "hardCalls": 3,
-          "nodeBytes": 522.2,
-          "tickAllocBytes": 1544.5,
-          "leakBytes": 70.26
-        },
-        {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 55.8,
+          "score": 57.7,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -1110,23 +1110,34 @@
           "leakBytes": 13.39
         },
         {
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 56.5,
+          "opsPerSec": 7990,
+          "hardCalls": 3,
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.5,
+          "leakBytes": 70.26
+        }
+      ],
+      "mobileTop5": [
+        {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 55.1,
+          "score": 74.9,
           "opsPerSec": 6462,
           "hardCalls": 3,
           "nodeBytes": 368.8,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
-        }
-      ],
-      "mobileTop5": [
+        },
         {
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 60.3,
+          "score": 60.8,
           "opsPerSec": 8388,
           "hardCalls": 3,
           "nodeBytes": 517.3,
@@ -1137,7 +1148,7 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 55.8,
+          "score": 56.7,
           "opsPerSec": 4844,
           "hardCalls": 5,
           "nodeBytes": 251,
@@ -1148,7 +1159,7 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 52.6,
+          "score": 54.5,
           "opsPerSec": 8204,
           "hardCalls": 3,
           "nodeBytes": 328.6,
@@ -1156,21 +1167,10 @@
           "leakBytes": 13.39
         },
         {
-          "engine": "$mol ($mol_wire_solo)",
-          "version": "v1.0.1855",
-          "tag": "Quantum Graph + Deep Compare",
-          "score": 49.9,
-          "opsPerSec": 6462,
-          "hardCalls": 3,
-          "nodeBytes": 368.8,
-          "tickAllocBytes": 582.8,
-          "leakBytes": 0
-        },
-        {
           "engine": "@pravosleva/reactive-engine",
           "version": "v3.0.5",
           "tag": "Full-featured Engine + DI",
-          "score": 47.8,
+          "score": 48.4,
           "opsPerSec": 9136,
           "hardCalls": 3,
           "nodeBytes": 607,

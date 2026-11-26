@@ -409,7 +409,7 @@ const scoredEngines = mergedEngines.map((e) => ({
     nodeMem: (minNode / Math.max(e.nodeBytes, 1)) * 100,
     tickMem: (minTick / Math.max(e.tickAllocBytes, 1)) * 100,
     // Плавная шкала утечек: <= 15 B/cyc ~ 90-100 баллов, > 400 B/cyc ~ штраф
-    leak: Math.max(0, Math.min(100, (minLeak / Math.max(e.leakBytes, minLeak)) * 100)),
+    leak: e.leakBytes <= 1 ? 100 : Math.min(100, (1 / e.leakBytes) * 100),
     isolation: e.isolation,
     ergonomics: e.ergonomics,
   },
