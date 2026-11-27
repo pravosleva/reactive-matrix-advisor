@@ -231,6 +231,24 @@ const ENGINE_CAPABILITIES = {
     rationale:
       'Самый аскетичный примитив: из коробки есть только локальное создание сигналов без глобального реестра и `batch()`. Нет ни `effectScope`, ни компараторов, ни DI, ни ресурсов.',
   },
+  'Svelte 5 (Runes)': {
+    tag: 'Compiler Runes + Deep Proxy',
+    isolationFlags: {
+      scopedContainer: 1,     // $effect.root()
+      noGlobalSingletons: 1,  // локальные сигналы без глобального реестра
+      snapshotHydration: 0,   // в ядре рун нет (только в SvelteKit)
+      cascadeDispose: 1,      // вызов функции очистки $effect.root()
+    },
+    ergonomicsFlags: {
+      builtInDi: 0,           // setContext/getContext привязаны к компонентам Svelte
+      customEquals: 0,        // только строгое сравнение === в $derived / $state
+      batchingSupport: 1,     // автоматический батчинг + flushSync()
+      asyncPrimitive: 0,      // в базовом ядре рун нет встроенного resource()
+      deepReactive: 1,        // глубокий реактивный Proxy в $state() из коробки
+    },
+    rationale:
+      'Изоляция подграфов и каскадная очистка через `$effect.root()`, автоматический батчинг с `flushSync()` и глубокий реактивный `Proxy` в `$state()` из коробки. В автономном ядре рун без SvelteKit отсутствуют DI, кастомный `equals` и `resource()`.',
+  },
 }
 // --
 
@@ -259,7 +277,7 @@ const ARCH_TRAITS = Object.fromEntries(
   })
 )
 
-// 6 продуктовых сценариев (каждый с весами для Desktop и Mobile Low-RAM)
+// Продуктовые сценарии (каждый с весами для Desktop и Mobile Low-RAM)
 // Веса: speed (ops/sec), smartGraph (минимум hard() calls), nodeMem (Node B), tickMem (Tick Alloc B), leak (Leak B/cyc), isolation, ergonomics
 const SCENARIOS = [
   {
@@ -393,7 +411,7 @@ class MatrixAdvisorService extends AbstractService {
     'advisor:memoryResource'
   )
 
-  // Вычисляемый узел нормализации и скоринга всех 10 движков
+  // Вычисляемый узел нормализации и скоринга всех движков
   scoredEngines = this.engine.computed(() => {
     const colliderData = this.colliderResource.value.data
     const memoryData = this.memoryResource.value.data
