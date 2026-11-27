@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-27T15:36:44.086Z",
+  "generatedAt": "2026-11-27T17:41:16.225Z",
   "sources": {
     "colliderTimestamp": "2026-11-27T14:46:39.326Z",
-    "memoryTimestamp": "2026-11-27T15:31:32.851Z"
+    "memoryTimestamp": "2026-11-27T17:27:28.570Z"
   },
   "engines": [
     {
@@ -14,7 +14,7 @@
       "hardCalls": 3,
       "nodeBytes": 606.9,
       "tickAllocBytes": 487.5,
-      "leakBytes": 32.29,
+      "leakBytes": 31.91,
       "isolation": 75,
       "ergonomics": 100,
       "norm": {
@@ -22,7 +22,7 @@
         "smartGraph": 100,
         "nodeMem": 41.3577195584116,
         "tickMem": 24.492307692307694,
-        "leak": 3.096934035305048,
+        "leak": 3.1338138514572234,
         "isolation": 75,
         "ergonomics": 100
       }
@@ -34,17 +34,17 @@
       "opsPerSec": 8410,
       "bestTimeMs": 594.56,
       "hardCalls": 3,
-      "nodeBytes": 517.2,
+      "nodeBytes": 517.5,
       "tickAllocBytes": 119.4,
-      "leakBytes": 67.23,
+      "leakBytes": 56.24,
       "isolation": 100,
       "ergonomics": 80,
       "norm": {
         "speed": 99.22133081642284,
         "smartGraph": 100,
-        "nodeMem": 48.53054911059551,
+        "nodeMem": 48.5024154589372,
         "tickMem": 100,
-        "leak": 1.487431206306708,
+        "leak": 1.778093883357041,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -58,7 +58,7 @@
       "hardCalls": 3,
       "nodeBytes": 328.7,
       "tickAllocBytes": 183.4,
-      "leakBytes": 20.63,
+      "leakBytes": 30.7,
       "isolation": 75,
       "ergonomics": 40,
       "norm": {
@@ -66,7 +66,7 @@
         "smartGraph": 100,
         "nodeMem": 76.3614237906906,
         "tickMem": 65.10359869138496,
-        "leak": 4.847309743092584,
+        "leak": 3.257328990228013,
         "isolation": 75,
         "ergonomics": 40
       }
@@ -78,17 +78,17 @@
       "opsPerSec": 7383,
       "bestTimeMs": 677.26,
       "hardCalls": 3,
-      "nodeBytes": 521.7,
-      "tickAllocBytes": 1544.6,
-      "leakBytes": 71.77,
+      "nodeBytes": 522.2,
+      "tickAllocBytes": 1544.7,
+      "leakBytes": 51.38,
       "isolation": 75,
       "ergonomics": 80,
       "norm": {
         "speed": 87.10476639924492,
         "smartGraph": 100,
-        "nodeMem": 48.111941728963004,
-        "tickMem": 7.73015667486728,
-        "leak": 1.3933398355858995,
+        "nodeMem": 48.065875143623124,
+        "tickMem": 7.72965624393086,
+        "leak": 1.9462826002335536,
         "isolation": 75,
         "ergonomics": 80
       }
@@ -100,7 +100,7 @@
       "opsPerSec": 6905,
       "bestTimeMs": 724.08,
       "hardCalls": 3,
-      "nodeBytes": 368.8,
+      "nodeBytes": 368.1,
       "tickAllocBytes": 582.8,
       "leakBytes": 0,
       "isolation": 75,
@@ -108,7 +108,7 @@
       "norm": {
         "speed": 81.46531382727701,
         "smartGraph": 100,
-        "nodeMem": 68.058568329718,
+        "nodeMem": 68.18799239337136,
         "tickMem": 20.487302676733016,
         "leak": 100,
         "isolation": 75,
@@ -123,16 +123,16 @@
       "bestTimeMs": 741.57,
       "hardCalls": 3,
       "nodeBytes": 1620.1,
-      "tickAllocBytes": 2002.2,
-      "leakBytes": 9.13,
+      "tickAllocBytes": 2000.8,
+      "leakBytes": 22.51,
       "isolation": 100,
       "ergonomics": 80,
       "norm": {
         "speed": 79.5422369042001,
         "smartGraph": 100,
         "nodeMem": 15.4928708104438,
-        "tickMem": 5.963440215762661,
-        "leak": 10.952902519167578,
+        "tickMem": 5.967612954818073,
+        "leak": 4.4424700133274095,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -144,17 +144,17 @@
       "opsPerSec": 5311,
       "bestTimeMs": 941.39,
       "hardCalls": 4,
-      "nodeBytes": 446.7,
+      "nodeBytes": 447.2,
       "tickAllocBytes": 1343.6,
-      "leakBytes": 74.03,
+      "leakBytes": 96.31,
       "isolation": 75,
       "ergonomics": 60,
       "norm": {
         "speed": 62.659273242095324,
         "smartGraph": 70,
-        "nodeMem": 56.189836579359756,
+        "nodeMem": 56.12701252236136,
         "tickMem": 8.886573384935993,
-        "leak": 1.3508037282182899,
+        "leak": 1.0383137784238397,
         "isolation": 75,
         "ergonomics": 60
       }
@@ -167,16 +167,16 @@
       "bestTimeMs": 1044.4,
       "hardCalls": 5,
       "nodeBytes": 251,
-      "tickAllocBytes": 125.4,
-      "leakBytes": 39.26,
+      "tickAllocBytes": 119.4,
+      "leakBytes": 29.44,
       "isolation": 75,
       "ergonomics": 20,
       "norm": {
         "speed": 56.477111845210004,
         "smartGraph": 40,
         "nodeMem": 100,
-        "tickMem": 95.21531100478468,
-        "leak": 2.547121752419766,
+        "tickMem": 100,
+        "leak": 3.3967391304347823,
         "isolation": 75,
         "ergonomics": 20
       }
@@ -188,17 +188,17 @@
       "opsPerSec": 4782,
       "bestTimeMs": 1045.64,
       "hardCalls": 5,
-      "nodeBytes": 257.5,
-      "tickAllocBytes": 277.8,
-      "leakBytes": 20.63,
+      "nodeBytes": 256.2,
+      "tickAllocBytes": 276.4,
+      "leakBytes": 21.8,
       "isolation": 25,
       "ergonomics": 20,
       "norm": {
         "speed": 56.41812175554507,
         "smartGraph": 40,
-        "nodeMem": 97.47572815533981,
-        "tickMem": 42.98056155507559,
-        "leak": 4.847309743092584,
+        "nodeMem": 97.97033567525372,
+        "tickMem": 43.19826338639653,
+        "leak": 4.587155963302751,
         "isolation": 25,
         "ergonomics": 20
       }
@@ -211,16 +211,16 @@
       "bestTimeMs": 1182.53,
       "hardCalls": 5,
       "nodeBytes": 518,
-      "tickAllocBytes": 2929.5,
-      "leakBytes": 46.62,
+      "tickAllocBytes": 2929.4,
+      "leakBytes": 128.2,
       "isolation": 75,
       "ergonomics": 40,
       "norm": {
         "speed": 49.88201982067012,
         "smartGraph": 40,
         "nodeMem": 48.455598455598455,
-        "tickMem": 4.075780849974399,
-        "leak": 2.1450021450021453,
+        "tickMem": 4.0759199836143925,
+        "leak": 0.7800312012480499,
         "isolation": 75,
         "ergonomics": 40
       }
@@ -232,17 +232,17 @@
       "opsPerSec": 3850,
       "bestTimeMs": 1298.56,
       "hardCalls": 6,
-      "nodeBytes": 5835.4,
+      "nodeBytes": 5836,
       "tickAllocBytes": 3379,
-      "leakBytes": 129.21,
+      "leakBytes": 127.58,
       "isolation": 100,
       "ergonomics": 80,
       "norm": {
         "speed": 45.422369042000945,
         "smartGraph": 15,
-        "nodeMem": 4.301333241937143,
+        "nodeMem": 4.30089102124743,
         "tickMem": 3.5335898194732174,
-        "leak": 0.7739339060444238,
+        "leak": 0.783821915660762,
         "isolation": 100,
         "ergonomics": 80
       }
@@ -261,9 +261,9 @@
           "score": 81.5,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -272,7 +272,7 @@
           "score": 75.6,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -280,12 +280,12 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 71.1,
+          "score": 70.9,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -296,18 +296,18 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 58.7,
+          "score": 58.8,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "mobileTop5": [
@@ -315,12 +315,12 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 73.8,
+          "score": 73.9,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -329,7 +329,7 @@
           "score": 70,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -337,23 +337,23 @@
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 67.9,
+          "score": 67.7,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 61.7,
+          "score": 63,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -364,7 +364,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -400,7 +400,7 @@
           "score": 84.2,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -411,9 +411,9 @@
           "score": 83.4,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -424,18 +424,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
-        },
-        {
-          "engine": "Reatom (@reatom/core)",
-          "version": "v1001.3.0",
-          "tag": "Transactional Atom Graph",
-          "score": 74.1,
-          "opsPerSec": 6742,
-          "hardCalls": 3,
-          "nodeBytes": 1620.1,
-          "tickAllocBytes": 2002.2,
-          "leakBytes": 9.13
+          "leakBytes": 31.91
         },
         {
           "engine": "MobX",
@@ -444,9 +433,20 @@
           "score": 73.9,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
+        },
+        {
+          "engine": "Reatom (@reatom/core)",
+          "version": "v1001.3.0",
+          "tag": "Transactional Atom Graph",
+          "score": 73.4,
+          "opsPerSec": 6742,
+          "hardCalls": 3,
+          "nodeBytes": 1620.1,
+          "tickAllocBytes": 2000.8,
+          "leakBytes": 22.51
         }
       ],
       "mobileTop5": [
@@ -454,10 +454,10 @@
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 79.6,
+          "score": 79.7,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -465,23 +465,23 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 72.8,
+          "score": 72.9,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 68.9,
+          "score": 68.7,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -492,18 +492,18 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 60.4,
+          "score": 60.5,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "weights": {
@@ -539,7 +539,7 @@
           "score": 82.4,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -547,12 +547,12 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 74.6,
+          "score": 74.7,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -563,29 +563,29 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "Reatom (@reatom/core)",
           "version": "v1001.3.0",
           "tag": "Transactional Atom Graph",
-          "score": 67.2,
+          "score": 65.9,
           "opsPerSec": 6742,
           "hardCalls": 3,
           "nodeBytes": 1620.1,
-          "tickAllocBytes": 2002.2,
-          "leakBytes": 9.13
+          "tickAllocBytes": 2000.8,
+          "leakBytes": 22.51
         },
         {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 61.9,
+          "score": 62,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "mobileTop5": [
@@ -596,7 +596,7 @@
           "score": 77.5,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -604,34 +604,34 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 61.4,
+          "score": 61.5,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 59.2,
+          "score": 58.8,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 57.1,
+          "score": 57.7,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -642,7 +642,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -678,7 +678,7 @@
           "score": 80.9,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -686,12 +686,12 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 77.9,
+          "score": 78,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -702,29 +702,29 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 67.6,
+          "score": 67.4,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "Reatom (@reatom/core)",
           "version": "v1001.3.0",
           "tag": "Transactional Atom Graph",
-          "score": 67.4,
+          "score": 66.4,
           "opsPerSec": 6742,
           "hardCalls": 3,
           "nodeBytes": 1620.1,
-          "tickAllocBytes": 2002.2,
-          "leakBytes": 9.13
+          "tickAllocBytes": 2000.8,
+          "leakBytes": 22.51
         }
       ],
       "mobileTop5": [
@@ -732,10 +732,10 @@
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 76.5,
+          "score": 76.6,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -743,34 +743,34 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 66.3,
+          "score": 66.4,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 63.5,
+          "score": 63.2,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 59.8,
+          "score": 60.4,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -781,7 +781,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -814,23 +814,23 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 86.3,
+          "score": 86.4,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 71.9,
+          "score": 71.8,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -839,7 +839,7 @@
           "score": 66.7,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -852,18 +852,18 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 61.5,
+          "score": 63,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         }
       ],
       "mobileTop5": [
@@ -874,31 +874,31 @@
           "score": 78.7,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 69.9,
+          "score": 71.6,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 68.8,
+          "score": 68.6,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -907,7 +907,7 @@
           "score": 61.1,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -920,7 +920,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -956,20 +956,20 @@
           "score": 81,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 79.4,
+          "score": 79.3,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -978,7 +978,7 @@
           "score": 77.2,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -991,7 +991,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "MobX",
@@ -1000,12 +1000,23 @@
           "score": 67.4,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "mobileTop5": [
+        {
+          "engine": "alien-signals",
+          "version": "v3.2.1",
+          "tag": "Low-level Primitive",
+          "score": 75.6,
+          "opsPerSec": 4787,
+          "hardCalls": 5,
+          "nodeBytes": 251,
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
+        },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
@@ -1015,18 +1026,7 @@
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
-        },
-        {
-          "engine": "alien-signals",
-          "version": "v3.2.1",
-          "tag": "Low-level Primitive",
-          "score": 74.9,
-          "opsPerSec": 4787,
-          "hardCalls": 5,
-          "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "leakBytes": 30.7
         },
         {
           "engine": "@angular/core (Signals)",
@@ -1035,18 +1035,18 @@
           "score": 70.8,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 69.9,
+          "score": 70,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1054,12 +1054,12 @@
           "engine": "@preact/signals-core",
           "version": "v1.14.5",
           "tag": "Minimalist Signal Primitive",
-          "score": 66,
+          "score": 66.3,
           "opsPerSec": 4782,
           "hardCalls": 5,
-          "nodeBytes": 257.5,
-          "tickAllocBytes": 277.8,
-          "leakBytes": 20.63
+          "nodeBytes": 256.2,
+          "tickAllocBytes": 276.4,
+          "leakBytes": 21.8
         }
       ],
       "weights": {
@@ -1095,20 +1095,20 @@
           "score": 90.3,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 75.4,
+          "score": 75.3,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -1119,7 +1119,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -1128,7 +1128,7 @@
           "score": 67.9,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1136,12 +1136,12 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 59.8,
+          "score": 61.3,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         }
       ],
       "mobileTop5": [
@@ -1152,31 +1152,31 @@
           "score": 83.7,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 74,
+          "score": 73.9,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 70.9,
+          "score": 72.6,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -1185,7 +1185,7 @@
           "score": 62,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1198,7 +1198,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -1231,10 +1231,10 @@
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 82.2,
+          "score": 82.3,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1242,12 +1242,12 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 70.6,
+          "score": 70.7,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -1258,29 +1258,29 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 61.3,
+          "score": 60.9,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
-          "engine": "Reatom (@reatom/core)",
-          "version": "v1001.3.0",
-          "tag": "Transactional Atom Graph",
-          "score": 58,
-          "opsPerSec": 6742,
+          "engine": "MobX",
+          "version": "v7.1.7",
+          "tag": "OOP Observable + Comparers",
+          "score": 56.6,
+          "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 1620.1,
-          "tickAllocBytes": 2002.2,
-          "leakBytes": 9.13
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "mobileTop5": [
@@ -1291,7 +1291,7 @@
           "score": 76,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1299,34 +1299,34 @@
           "engine": "@angular/core (Signals)",
           "version": "v22.3.0",
           "tag": "Framework Signals + DI",
-          "score": 61.4,
+          "score": 61.5,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 59.9,
+          "score": 59.5,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 56.3,
+          "score": 57.2,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -1337,7 +1337,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {
@@ -1370,10 +1370,10 @@
           "engine": "$mol ($mol_wire_solo)",
           "version": "v1.0.1855",
           "tag": "Quantum Graph + Deep Compare",
-          "score": 79.6,
+          "score": 79.7,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1384,20 +1384,20 @@
           "score": 67.9,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 64.2,
+          "score": 63.9,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -1408,18 +1408,18 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "MobX",
           "version": "v7.1.7",
           "tag": "OOP Observable + Comparers",
-          "score": 55.5,
+          "score": 55.6,
           "opsPerSec": 7383,
           "hardCalls": 3,
-          "nodeBytes": 521.7,
-          "tickAllocBytes": 1544.6,
-          "leakBytes": 71.77
+          "nodeBytes": 522.2,
+          "tickAllocBytes": 1544.7,
+          "leakBytes": 51.38
         }
       ],
       "mobileTop5": [
@@ -1430,7 +1430,7 @@
           "score": 74.4,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1441,42 +1441,42 @@
           "score": 63.8,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
           "version": "v3.5.46",
           "tag": "Balanced Core + EffectScope",
-          "score": 63.5,
+          "score": 63.2,
           "opsPerSec": 7725,
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 61.2,
+          "score": 62.1,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         },
         {
           "engine": "@preact/signals-core",
           "version": "v1.14.5",
           "tag": "Minimalist Signal Primitive",
-          "score": 50.6,
+          "score": 50.7,
           "opsPerSec": 4782,
           "hardCalls": 5,
-          "nodeBytes": 257.5,
-          "tickAllocBytes": 277.8,
-          "leakBytes": 20.63
+          "nodeBytes": 256.2,
+          "tickAllocBytes": 276.4,
+          "leakBytes": 21.8
         }
       ],
       "weights": {
@@ -1512,9 +1512,9 @@
           "score": 90.3,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
+          "leakBytes": 56.24
         },
         {
           "engine": "@vue/reactivity",
@@ -1525,7 +1525,7 @@
           "hardCalls": 3,
           "nodeBytes": 328.7,
           "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 30.7
         },
         {
           "engine": "@pravosleva/reactive-engine",
@@ -1536,7 +1536,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -1545,7 +1545,7 @@
           "score": 67,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1553,12 +1553,12 @@
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 60.6,
+          "score": 62.1,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
         }
       ],
       "mobileTop5": [
@@ -1569,31 +1569,31 @@
           "score": 83.6,
           "opsPerSec": 8410,
           "hardCalls": 3,
-          "nodeBytes": 517.2,
+          "nodeBytes": 517.5,
           "tickAllocBytes": 119.4,
-          "leakBytes": 67.23
-        },
-        {
-          "engine": "@vue/reactivity",
-          "version": "v3.5.46",
-          "tag": "Balanced Core + EffectScope",
-          "score": 73.5,
-          "opsPerSec": 7725,
-          "hardCalls": 3,
-          "nodeBytes": 328.7,
-          "tickAllocBytes": 183.4,
-          "leakBytes": 20.63
+          "leakBytes": 56.24
         },
         {
           "engine": "alien-signals",
           "version": "v3.2.1",
           "tag": "Low-level Primitive",
-          "score": 71.7,
+          "score": 73.5,
           "opsPerSec": 4787,
           "hardCalls": 5,
           "nodeBytes": 251,
-          "tickAllocBytes": 125.4,
-          "leakBytes": 39.26
+          "tickAllocBytes": 119.4,
+          "leakBytes": 29.44
+        },
+        {
+          "engine": "@vue/reactivity",
+          "version": "v3.5.46",
+          "tag": "Balanced Core + EffectScope",
+          "score": 73.4,
+          "opsPerSec": 7725,
+          "hardCalls": 3,
+          "nodeBytes": 328.7,
+          "tickAllocBytes": 183.4,
+          "leakBytes": 30.7
         },
         {
           "engine": "$mol ($mol_wire_solo)",
@@ -1602,7 +1602,7 @@
           "score": 61.1,
           "opsPerSec": 6905,
           "hardCalls": 3,
-          "nodeBytes": 368.8,
+          "nodeBytes": 368.1,
           "tickAllocBytes": 582.8,
           "leakBytes": 0
         },
@@ -1615,7 +1615,7 @@
           "hardCalls": 3,
           "nodeBytes": 606.9,
           "tickAllocBytes": 487.5,
-          "leakBytes": 32.29
+          "leakBytes": 31.91
         }
       ],
       "weights": {

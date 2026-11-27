@@ -4,7 +4,7 @@
 
 Практический матричный анализатор для выбора реактивного движка под реальные продуктовые сценарии (для **Desktop / Laptop** и **Mobile / Low-RAM**), объединяющий физические замеры двух изолированных стендов и чек-лист архитектурных возможностей API:
 1. **Вычислительный коллайдер:** [`mol-collider-benchmark`](https://github.com/pravosleva/mol-collider-benchmark) (`2026-11-27T14:46:39.326Z`)
-2. **Коллайдер памяти и GC:** [`reactive-memory-benchmark`](https://github.com/pravosleva/reactive-memory-benchmark) (`2026-11-27T15:31:32.851Z`)
+2. **Коллайдер памяти и GC:** [`reactive-memory-benchmark`](https://github.com/pravosleva/reactive-memory-benchmark) (`2026-11-27T17:27:28.570Z`)
 
 ## 1. Матрица рекомендаций по сценариям (Топ-5)
 
@@ -14,11 +14,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **@angular/core (Signals)** `v22.3.0` (**81.5**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**73.8**) — `517.2 B/node`, `119.4 B/tick` |
-| **#2** | **$mol ($mol_wire_solo)** `v1.0.1855` (**75.6**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**70**) — `368.8 B/node`, `582.8 B/tick` |
-| **#3** | **@vue/reactivity** `v3.5.46` (**71.1**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**67.9**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**66.2**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**61.7**) — `251 B/node`, `125.4 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**58.7**) — `7383 ops/s`, `521.7 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54.9**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **@angular/core (Signals)** `v22.3.0` (**81.5**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**73.9**) — `517.5 B/node`, `119.4 B/tick` |
+| **#2** | **$mol ($mol_wire_solo)** `v1.0.1855` (**75.6**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**70**) — `368.1 B/node`, `582.8 B/tick` |
+| **#3** | **@vue/reactivity** `v3.5.46` (**70.9**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**67.7**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**66.2**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**63**) — `251 B/node`, `119.4 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**58.8**) — `7383 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54.9**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 2. Многошаговые формы (валидация, условные ветки, загрузка файлов)
 
@@ -26,11 +26,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**84.2**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**79.6**) — `368.8 B/node`, `582.8 B/tick` |
-| **#2** | **@angular/core (Signals)** `v22.3.0` (**83.4**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**72.8**) — `517.2 B/node`, `119.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**81.1**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**68.9**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **Reatom (@reatom/core)** `v1001.3.0` (**74.1**) — `6742 ops/s`, `1620.1 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**64.9**) — `606.9 B/node`, `487.5 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**73.9**) — `7383 ops/s`, `521.7 B/node` | **MobX** `v7.1.7` (**60.4**) — `521.7 B/node`, `1544.6 B/tick` |
+| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**84.2**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**79.7**) — `368.1 B/node`, `582.8 B/tick` |
+| **#2** | **@angular/core (Signals)** `v22.3.0` (**83.4**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**72.9**) — `517.5 B/node`, `119.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**81.1**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**68.7**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **MobX** `v7.1.7` (**73.9**) — `7383 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**64.9**) — `606.9 B/node`, `487.5 B/tick` |
+| **#5** | **Reatom (@reatom/core)** `v1001.3.0` (**73.4**) — `6742 ops/s`, `1620.1 B/node` | **MobX** `v7.1.7` (**60.5**) — `522.2 B/node`, `1544.7 B/tick` |
 
 ### Сценарий 3. Личный кабинет на микрофронтендах (MFE разных команд)
 
@@ -38,11 +38,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**82.4**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**77.5**) — `368.8 B/node`, `582.8 B/tick` |
-| **#2** | **@angular/core (Signals)** `v22.3.0` (**74.6**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**61.4**) — `517.2 B/node`, `119.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**67.7**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**59.2**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **Reatom (@reatom/core)** `v1001.3.0` (**67.2**) — `6742 ops/s`, `1620.1 B/node` | **alien-signals** `v3.2.1` (**57.1**) — `251 B/node`, `125.4 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**61.9**) — `7383 ops/s`, `521.7 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**49.8**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**82.4**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**77.5**) — `368.1 B/node`, `582.8 B/tick` |
+| **#2** | **@angular/core (Signals)** `v22.3.0` (**74.7**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**61.5**) — `517.5 B/node`, `119.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**67.7**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**58.8**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **Reatom (@reatom/core)** `v1001.3.0` (**65.9**) — `6742 ops/s`, `1620.1 B/node` | **alien-signals** `v3.2.1` (**57.7**) — `251 B/node`, `119.4 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**62**) — `7383 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**49.8**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 4. Серверный рендеринг (SSR: Next.js, Nuxt, Angular Universal)
 
@@ -50,11 +50,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**80.9**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**76.5**) — `368.8 B/node`, `582.8 B/tick` |
-| **#2** | **@angular/core (Signals)** `v22.3.0` (**77.9**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**66.3**) — `517.2 B/node`, `119.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**63.5**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **@vue/reactivity** `v3.5.46` (**67.6**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**59.8**) — `251 B/node`, `125.4 B/tick` |
-| **#5** | **Reatom (@reatom/core)** `v1001.3.0` (**67.4**) — `6742 ops/s`, `1620.1 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54.7**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**80.9**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**76.6**) — `368.1 B/node`, `582.8 B/tick` |
+| **#2** | **@angular/core (Signals)** `v22.3.0` (**78**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**66.4**) — `517.5 B/node`, `119.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**63.2**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **@vue/reactivity** `v3.5.46` (**67.4**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**60.4**) — `251 B/node`, `119.4 B/tick` |
+| **#5** | **Reatom (@reatom/core)** `v1001.3.0` (**66.4**) — `6742 ops/s`, `1620.1 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**54.7**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 5. Реалтайм-дашборды и стриминг (WebSocket, графики, тикеры)
 
@@ -62,11 +62,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **@angular/core (Signals)** `v22.3.0` (**86.3**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**78.7**) — `517.2 B/node`, `119.4 B/tick` |
-| **#2** | **@vue/reactivity** `v3.5.46` (**71.9**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**69.9**) — `251 B/node`, `125.4 B/tick` |
-| **#3** | **$mol ($mol_wire_solo)** `v1.0.1855` (**66.7**) — `6905 ops/s`, `368.8 B/node` | **@vue/reactivity** `v3.5.46` (**68.8**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**63.5**) — `8476 ops/s`, `606.9 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**61.1**) — `368.8 B/node`, `582.8 B/tick` |
-| **#5** | **alien-signals** `v3.2.1` (**61.5**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**52.2**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **@angular/core (Signals)** `v22.3.0` (**86.4**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**78.7**) — `517.5 B/node`, `119.4 B/tick` |
+| **#2** | **@vue/reactivity** `v3.5.46` (**71.8**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**71.6**) — `251 B/node`, `119.4 B/tick` |
+| **#3** | **$mol ($mol_wire_solo)** `v1.0.1855` (**66.7**) — `6905 ops/s`, `368.1 B/node` | **@vue/reactivity** `v3.5.46` (**68.6**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**63.5**) — `8476 ops/s`, `606.9 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**61.1**) — `368.1 B/node`, `582.8 B/tick` |
+| **#5** | **alien-signals** `v3.2.1` (**63**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**52.2**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 6. Крупные таблицы и редактор формул (10 000+ реактивных ячеек)
 
@@ -74,11 +74,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **@angular/core (Signals)** `v22.3.0` (**81**) — `8410 ops/s`, `517.2 B/node` | **@vue/reactivity** `v3.5.46` (**75**) — `328.7 B/node`, `183.4 B/tick` |
-| **#2** | **@vue/reactivity** `v3.5.46` (**79.4**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**74.9**) — `251 B/node`, `125.4 B/tick` |
-| **#3** | **$mol ($mol_wire_solo)** `v1.0.1855` (**77.2**) — `6905 ops/s`, `368.8 B/node` | **@angular/core (Signals)** `v22.3.0` (**70.8**) — `517.2 B/node`, `119.4 B/tick` |
-| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**71.7**) — `8476 ops/s`, `606.9 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**69.9**) — `368.8 B/node`, `582.8 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**67.4**) — `7383 ops/s`, `521.7 B/node` | **@preact/signals-core** `v1.14.5` (**66**) — `257.5 B/node`, `277.8 B/tick` |
+| **#1** | **@angular/core (Signals)** `v22.3.0` (**81**) — `8410 ops/s`, `517.5 B/node` | **alien-signals** `v3.2.1` (**75.6**) — `251 B/node`, `119.4 B/tick` |
+| **#2** | **@vue/reactivity** `v3.5.46` (**79.3**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**75**) — `328.7 B/node`, `183.4 B/tick` |
+| **#3** | **$mol ($mol_wire_solo)** `v1.0.1855` (**77.2**) — `6905 ops/s`, `368.1 B/node` | **@angular/core (Signals)** `v22.3.0` (**70.8**) — `517.5 B/node`, `119.4 B/tick` |
+| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**71.7**) — `8476 ops/s`, `606.9 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**70**) — `368.1 B/node`, `582.8 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**67.4**) — `7383 ops/s`, `522.2 B/node` | **@preact/signals-core** `v1.14.5` (**66.3**) — `256.2 B/node`, `276.4 B/tick` |
 
 ### Сценарий 7. Графические и node-based редакторы (Miro, Figma, конструкторы схем)
 
@@ -86,11 +86,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **@angular/core (Signals)** `v22.3.0` (**90.3**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**83.7**) — `517.2 B/node`, `119.4 B/tick` |
-| **#2** | **@vue/reactivity** `v3.5.46` (**75.4**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**74**) — `328.7 B/node`, `183.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**70.9**) — `251 B/node`, `125.4 B/tick` |
-| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**67.9**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**62**) — `368.8 B/node`, `582.8 B/tick` |
-| **#5** | **alien-signals** `v3.2.1` (**59.8**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**57**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **@angular/core (Signals)** `v22.3.0` (**90.3**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**83.7**) — `517.5 B/node`, `119.4 B/tick` |
+| **#2** | **@vue/reactivity** `v3.5.46` (**75.3**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**73.9**) — `328.7 B/node`, `183.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**72.6**) — `251 B/node`, `119.4 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**67.9**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**62**) — `368.1 B/node`, `582.8 B/tick` |
+| **#5** | **alien-signals** `v3.2.1` (**61.3**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**57**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 8. Offline-first / Local-first PWA (долгие сессии, синхронизация дельт)
 
@@ -98,11 +98,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**82.2**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**76**) — `368.8 B/node`, `582.8 B/tick` |
-| **#2** | **@angular/core (Signals)** `v22.3.0` (**70.6**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**61.4**) — `517.2 B/node`, `119.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**62.8**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**59.9**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **@vue/reactivity** `v3.5.46` (**61.3**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**56.3**) — `251 B/node`, `125.4 B/tick` |
-| **#5** | **Reatom (@reatom/core)** `v1001.3.0` (**58**) — `6742 ops/s`, `1620.1 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**48.5**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**82.3**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**76**) — `368.1 B/node`, `582.8 B/tick` |
+| **#2** | **@angular/core (Signals)** `v22.3.0` (**70.7**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**61.5**) — `517.5 B/node`, `119.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**62.8**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**59.5**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **@vue/reactivity** `v3.5.46` (**60.9**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**57.2**) — `251 B/node`, `119.4 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**56.6**) — `7383 ops/s`, `522.2 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**48.5**) — `606.9 B/node`, `487.5 B/tick` |
 
 ### Сценарий 9. Мессенджер с множеством чат-комнат (треды, непрочитанные, кэш истории)
 
@@ -110,11 +110,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**79.6**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**74.4**) — `368.8 B/node`, `582.8 B/tick` |
-| **#2** | **@angular/core (Signals)** `v22.3.0` (**67.9**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**63.8**) — `517.2 B/node`, `119.4 B/tick` |
-| **#3** | **@vue/reactivity** `v3.5.46` (**64.2**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**63.5**) — `328.7 B/node`, `183.4 B/tick` |
-| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**60.1**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**61.2**) — `251 B/node`, `125.4 B/tick` |
-| **#5** | **MobX** `v7.1.7` (**55.5**) — `7383 ops/s`, `521.7 B/node` | **@preact/signals-core** `v1.14.5` (**50.6**) — `257.5 B/node`, `277.8 B/tick` |
+| **#1** | **$mol ($mol_wire_solo)** `v1.0.1855` (**79.7**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**74.4**) — `368.1 B/node`, `582.8 B/tick` |
+| **#2** | **@angular/core (Signals)** `v22.3.0` (**67.9**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**63.8**) — `517.5 B/node`, `119.4 B/tick` |
+| **#3** | **@vue/reactivity** `v3.5.46` (**63.9**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**63.2**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **@pravosleva/reactive-engine** `v3.0.5` (**60.1**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**62.1**) — `251 B/node`, `119.4 B/tick` |
+| **#5** | **MobX** `v7.1.7` (**55.6**) — `7383 ops/s`, `522.2 B/node` | **@preact/signals-core** `v1.14.5` (**50.7**) — `256.2 B/node`, `276.4 B/tick` |
 
 ### Сценарий 10. Инвестиционное приложение и трейдинг (поток котировок и графики)
 
@@ -122,11 +122,11 @@
 
 | Место | 💻 Desktop / Laptop (стандартный ПК) | 📱 Mobile / Low-RAM (жёсткий лимит памяти) |
 | :---: | :--- | :--- |
-| **#1** | **@angular/core (Signals)** `v22.3.0` (**90.3**) — `8410 ops/s`, `517.2 B/node` | **@angular/core (Signals)** `v22.3.0` (**83.6**) — `517.2 B/node`, `119.4 B/tick` |
-| **#2** | **@vue/reactivity** `v3.5.46` (**74.9**) — `7725 ops/s`, `328.7 B/node` | **@vue/reactivity** `v3.5.46` (**73.5**) — `328.7 B/node`, `183.4 B/tick` |
-| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **alien-signals** `v3.2.1` (**71.7**) — `251 B/node`, `125.4 B/tick` |
-| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**67**) — `6905 ops/s`, `368.8 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**61.1**) — `368.8 B/node`, `582.8 B/tick` |
-| **#5** | **alien-signals** `v3.2.1` (**60.6**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**57**) — `606.9 B/node`, `487.5 B/tick` |
+| **#1** | **@angular/core (Signals)** `v22.3.0` (**90.3**) — `8410 ops/s`, `517.5 B/node` | **@angular/core (Signals)** `v22.3.0` (**83.6**) — `517.5 B/node`, `119.4 B/tick` |
+| **#2** | **@vue/reactivity** `v3.5.46` (**74.9**) — `7725 ops/s`, `328.7 B/node` | **alien-signals** `v3.2.1` (**73.5**) — `251 B/node`, `119.4 B/tick` |
+| **#3** | **@pravosleva/reactive-engine** `v3.0.5` (**69.6**) — `8476 ops/s`, `606.9 B/node` | **@vue/reactivity** `v3.5.46` (**73.4**) — `328.7 B/node`, `183.4 B/tick` |
+| **#4** | **$mol ($mol_wire_solo)** `v1.0.1855` (**67**) — `6905 ops/s`, `368.1 B/node` | **$mol ($mol_wire_solo)** `v1.0.1855` (**61.1**) — `368.1 B/node`, `582.8 B/tick` |
+| **#5** | **alien-signals** `v3.2.1` (**62.1**) — `4787 ops/s`, `251 B/node` | **@pravosleva/reactive-engine** `v3.0.5` (**57**) — `606.9 B/node`, `487.5 B/tick` |
 
 ## 2. Как оцениваются архитектурные свойства движка (`isolation` и `ergonomics`)
 
