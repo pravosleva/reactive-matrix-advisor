@@ -38,8 +38,8 @@ async function loadJsonSource(localPathEnv, urlEnv, fallbackUrl) {
   return res.json()
 }
 
-// Нормализация имён движков между двумя репозиториями (например, "MobX (comparer.structural)" -> "MobX")
-const normalizeName = (name) => name.replace(/\s*\(comparer\.structural\)/, '').trim()
+// Нормализация имён движков между двумя репозиториями (например, "MobX (compareStructural)" -> "MobX")
+const normalizeName = (name) => name.replace(/\s*\(compareStructural\)/, '').trim()
 
 // -- Архитектурные свойства библиотек (оценка от 0 до 100 по наличию "батареек" для продакшена)
 // isolation: встроенная изоляция инстансов для SSR и микрофронтендов (без глобальных синглтонов)
@@ -132,13 +132,13 @@ const ENGINE_CAPABILITIES = {
     },
     ergonomicsFlags: {
       builtInDi: 0,           // нет встроенного DI-контейнера
-      customEquals: 1,        // comparer.structural / кастомный equals
+      customEquals: 1,        // compareStructural / кастомный equals
       batchingSupport: 1,        // runInAction / action
       asyncPrimitive: 1,      // flow() с генераторами и отменой
       deepReactive: 1,        // makeAutoObservable (глубокий Proxy)
     },
     rationale:
-      'Изоляция через локальные инстансы сторов и `enableStaticRendering`, `comparer.structural`, `runInAction`, `flow()` и глубокий Proxy `makeAutoObservable`. Нет каскадной очистки подграфа одной командой и встроенного DI.',
+      'Изоляция через локальные инстансы сторов и `enableStaticRendering`, `compareStructural`, `runInAction`, `flow()` и глубокий Proxy `makeAutoObservable`. Нет каскадной очистки подграфа одной командой и встроенного DI.',
   },
   '@vue/reactivity': {
     tag: 'Balanced Core + EffectScope',
